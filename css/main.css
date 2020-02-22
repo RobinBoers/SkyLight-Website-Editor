@@ -1,0 +1,7 @@
+main, header, footer {
+    width: 80%;
+    background-color: ghostwhite;
+    margin:auto;
+    padding: 10px;
+    padding-left:20px;
+}

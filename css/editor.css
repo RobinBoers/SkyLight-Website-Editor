@@ -1,0 +1,73 @@
+/* Deze styleregel geldt alleen voor de editor */
+.main {
+    margin-top: 7px !important;
+    margin: auto;
+/*                width: 80%;*/
+}
+body {
+    background: none !important;
+    background-color: #Idf5G6 !important;
+}/* #35df9c is kleur */
+:root {
+    --color-one:#35df9c;
+/*                --color-two:#1ebf7f;*/
+}
+input, button {
+    transition: none !important;
+}
+input:hover, button:hover {
+    border-left-width: 3px  !important;
+    border-left-color: var(--color-one) !important;
+}
+a {
+    font-weight: bold;
+    color: var(--color-one);
+}
+/* Create Blueprint
+* {
+    background-color: royalblue;
+    border: 1px solid white;
+}
+*/
+#bg12 * {
+--color-one: darkblue;
+}
+main {
+margin-top: 7px !important;
+}
+.bg {
+width: 100%;
+background: url("../afbeeldingen/uploads/background.png") no-repeat center center fixed;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+padding-top: 30px;
+}.modal-content {
+padding: 10px;
+}
+
+.icon-bar {
+width: 100%;
+background-color: #555;
+overflow: auto;
+}
+
+.icon-bar a {
+float: left;
+width: 20%;
+text-align: center;
+padding: 12px 0;
+transition: all 0.3s ease;
+color: white;
+font-size: 36px;
+}
+
+.icon-bar a:hover {
+background-color: #000;
+}
+
+.active {
+background-color: #4CAF50;
+}

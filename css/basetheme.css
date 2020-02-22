@@ -1,0 +1,389 @@
+/* Background */
+
+body {
+  background: url("/images/uploads/background.png") no-repeat center center fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Default font, because serif is ugly */
+:root {
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    line-height: 1.2;
+}
+
+/* Color, and hoverefect for the hyperlinks */
+a {
+    font-weight: 600;
+    text-decoration: none;
+    color:royalblue;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+h1 a {
+  text-decoration: none !important;
+  color:black;
+}
+
+/* Settings for the themes section in the editor */
+
+.beschrijving::before {
+    content: "Description: "
+}
+
+.themedeveloper::before {
+    content: "Themedeveloper: "
+}
+
+/* Settings for the textarea in the editor */
+
+textarea {
+    width: 70%;
+    height: 100px;
+    border-radius: 20px;
+    font-family: sans-serif;
+    padding: 20px;
+    resize: none;
+}
+textarea:hover {
+    cursor: pointer;
+}
+
+/* Make warnings red */
+.red {
+    color: red;
+}
+
+/* Logo */
+.logo {
+/*    float: left;*/
+    width: 100px;
+    height: auto;
+}
+
+/* Always handy */
+.clearfix {
+  overflow: auto;
+}
+
+/* Settings for the Getting Started box in the editor */
+.startkop {
+    width: 100%;
+    color: white;
+}
+.startkop span {
+    float: right;
+}
+#startbox {
+    padding: 10px;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    background-color: darkslategrey;
+}
+#startbox p {
+    width: 70%;
+    color: white;
+}
+.smalltext {
+    font-size: 9px;
+}
+
+/* Make text white */
+.white {background-color:white;padding:4px;}
+
+/* Maakt de tekst groter op een mobiele telefoon */
+
+@media all and (min-width: 1030px) {
+    
+    /* Floats rechts en links */
+    .left {
+        float: left;
+    }
+    .center {
+        float:left;
+        text-align: center;
+    }
+    .right {
+        float: right;
+    }
+    .nav li {
+        display: inline;
+    }
+}
+
+/* Reset font-weight for headings */
+
+h2, h3, h4, h5, h6 {
+    font-weight: normal;
+}
+
+/* Blink effect */
+
+blink {
+    -webkit-animation: 2s linear infinite condemned_blink_effect; /* for android */
+    animation: 2s linear infinite condemned_blink_effect;
+}
+@-webkit-keyframes condemned_blink_effect { /* for android */
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes condemned_blink_effect {
+    0% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+/******************************
+    ////////////////////////
+    /////// BUTTONS ////////
+    ////////////////////////
+******************************/
+
+/* Cool buttons */
+
+input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
+/*    border-style: outset;*/
+    border-style: solid;
+    border-image: initial;
+    border-radius: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 10px;
+    height: 40px;
+    cursor: pointer;
+}
+
+/* Hovereffect */
+
+input[type="button" i]:hover, input[type="submit" i]:hover, input[type="reset" i]:hover,input[type="file" i]::-webkit-file-upload-button:hover, button:hover {
+    transition-property: all;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+    border-left-style: solid;
+    border-left-width: 7px;
+}
+
+/* Let the buttons in the Getting Started box look different */
+
+#startbox input[type="button" i], #startbox input[type="submit" i], #startbox input[type="reset" i], #startbox input[type="file" i]::-webkit-file-upload-button, #startbox button {
+    color: darkgreen;
+    font-weight: bold;
+    background-color: white;
+    border-color: white;
+    border-style: outset;
+}
+
+/* Press in effect */
+
+input[type="button" i]:active, input[type="submit" i]:active, input[type="reset" i]:active, input[type="file" i]::-webkit-file-upload-button:active, button:active {
+    border-style: inset !important;
+}
+
+/******************************
+     ////////////////////////
+    //////// INPUT /////////
+   ////////////////////////
+******************************/
+
+/* Border */
+input[type="text" i], input[type="tel" i], input[type="email" i], input[type="password" i] {
+/*    border-style: outset;*/
+    border-style: solid;
+    border-image: initial;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 3px;
+    height: 40px;
+    cursor: pointer;
+    border-width:1px;
+    border-color: gray;
+}
+
+/* Remove outline */
+
+:focus {
+    outline:none;
+}
+
+/* No border on the login screen */
+ .inlogveld {
+     border-color: transparent !important;
+}
+
+/* hide error */
+#error {
+    display: none;
+}
+
+       /*********************
+      ///////////////////////
+     //////// RANGE ////////
+    ///////////////////////
+   **********************/
+   
+/* Reset everything */
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none;
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+/* WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  margin-top: -14px; 
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+
+/* Firefox */
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* IE & Edge */
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+
+/* Something is happening */
+
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: deepskyblue;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -3.6px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: deepskyblue;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  background: deepskyblue;
+  border-radius: 25px;
+  border: 0px solid #000101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: white;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 12.8px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  border-width: 39px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: deepskyblue;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: greeb;
+  border: 0px solid #000101;
+  border-radius: 50px;
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #000000;
+  height: 20px;
+  width: 39px;
+  border-radius: 7px;
+  background: deepskyblue;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: deepskyblue;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: deepskyblue;
+}
+
+/* End stylesheet */
