@@ -89,7 +89,7 @@
                     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
                     <a href="index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
                     <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
-                    <a href="blogs.php" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-edit"></i>  Blog</a>
+                    <a href="blogs.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit"></i>  Blog</a>
                     <a href="history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
                     <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
                 </div>
@@ -102,31 +102,54 @@
 
                 <!-- Header -->
                 <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-edit"></i> Blog</b></h5>
-                <br>
-                <button onclick="window.location = 'newpost.php'">Compose new post</button>
+                <h5><b><i class="fa fa-edit"></i> Update post</b></h5>
                 </header>
 
                 <div class="w3-container">
-                    <ul>
-                        <?php
-                            $file = "../content/blog.json";
 
-                            if(file_exists($file) && filesize($file) > 0){
-                                $handle = fopen($file, "a+");
-                                $contents = fread($handle, filesize($file));
-                                $blogs = json_decode($contents);
-                                fclose($handle);
+                    <?php
+                        $id = $_GET['id'];
 
-                                foreach ($blogs as $blog){ ?>
-                                    <li><a href="updatepost.php?id=<?php echo $blog->id; ?>"><?php echo $blog->title; ?></a></li>
-                                    <?php
-                                }
+                        $contents = file_get_contents("../content/blog.json");
+                        $blogs = json_decode($contents);
+
+                        foreach ($blogs as $blog){
+                            if($blog->id === $id) {
+                                $title = $blog->title;
+                                $text = $blog->text;
                             }
+                        } 
+
+                    ?>
+
+                    <h2 class="title"><?php echo $title; ?></h2>
+
+                    <!-- Include stylesheet for Quill -->
+                    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+                    <!-- Create the editor container for Quill -->
+                    <div id="editor">
+                        <?php
+                            echo $text;
                         ?>
-                    </ul>
+                    </div>
+
+                    <!-- Include the Quill library -->
+                    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+                    <br>
+
+                    <button onclick="submit()">Update</button>
+
                 </div>
                 <hr>
+
+            	<form style="display:none !important;" class="form" action="scripts/update-postblog.php" method="post">
+                    <input id="content" type="text" name="posttext-edit">
+                    <input id="id" type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                    <input type=hidden name=update value=update>
+                    <input type="submit">
+                </form>
 
 
                 <!-- End page content -->
@@ -155,6 +178,29 @@
                 mySidebar.style.display = "none";
                 overlayBg.style.display = "none";
                 }
+                </script>
+                <!-- Initialize Quill editor -->
+                <script>
+
+                    var quill = new Quill('#editor', {
+                        modules: {
+                            toolbar: [
+                            [{ header: [1, 2, false] }],
+                            ['bold', 'italic', 'underline'],
+                            ['image', 'blockquote', 'link'],
+                            ['code-block'],
+                            [{ list: 'ordered' }, { list: 'bullet' }]
+                            ]
+                        },
+                        placeholder: 'Add new text to update blogpost',
+                        theme: 'snow'  // or 'bubble'
+                    });
+                    
+                    function submit() {
+                        document.querySelector("#content").value = document.querySelector(".ql-editor").innerHTML;
+
+                        document.querySelector(".form").submit();
+                    }
                 </script>
             <?php
         }

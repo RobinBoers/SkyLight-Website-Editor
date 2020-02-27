@@ -21,7 +21,7 @@
     <main>
         <h2><?php echo $pagetitle; ?></h2>
         <p>By <?php echo $auteur; ?></p>
-        <p><?php echo $content; ?></p>
+        <div class="postcontent"><?php echo $content; ?></div>
         <a href="<?php echo $taglink; ?>"><?php echo $tags; ?></a>
         <h2>More posts</h2>
         <?php include "../content/blog.php"; ?>

@@ -1,4 +1,3 @@
-
 <?php 
     $pagename = basename(__FILE__, ".php");
     $BlogId = basename(__FILE__, ".php");

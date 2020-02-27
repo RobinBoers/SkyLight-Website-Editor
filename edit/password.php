@@ -1,3 +1,3 @@
 <?php
-    $password = "NewWebsite";
+    $password = "root";
 ?>

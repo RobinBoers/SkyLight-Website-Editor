@@ -72,6 +72,14 @@ textarea:hover {
   overflow: auto;
 }
 
+/* Make content on blogpage look good. */
+.postcontent {
+  margin-bottom: 10px;
+}
+.postcontent p {
+      margin: 0;
+}
+
 /* Settings for the Getting Started box in the editor */
 .startkop {
     width: 100%;

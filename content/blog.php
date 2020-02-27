@@ -19,14 +19,14 @@ if(file_exists($file) && filesize($file) > 0){
             <article class="post">
                 <h3><a href="<?= $blog->link ?>"><?= $blog->title ?></a></h3>
                 <p class="clearfix">posted by: <b><?= $blog->auteur ?></b> on <b><?= $blog->datum ?></b>, Tags: <a href="<?php echo $blog->taglink; ?>"><b><?= $blog->tags ?></b></a></p>
-                <p class="clearfix blogtext">
+                <div class="clearfix blogtext postcontent">
                     <?php
                         $text = $blog->text;
                         $text = substr($text, 0, 340);
                         $text = substr($text, 0, strrpos($text, ' ')) . " ..."; 
                         echo(nl2br($text))
                     ?>
-                </p>
+                </div>
             </article>
             <?php
         }

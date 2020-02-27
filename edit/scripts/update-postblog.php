@@ -17,31 +17,26 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         $blog = array("id" => $id, "title" => $title, "text" => $text, "tags" => $tags, "taglink" => "/search.php?tags=".$tags, "link" => "/post/".$id.".php", "auteur" => $auteur, "datum" => $datum);
         
         // Get the older posts
-        $oldercontent = file_get_contents("../content/blog.json");
+        $oldercontent = file_get_contents("../../content/blog.json");
         $blogs = json_decode($oldercontent);
         
         // Merge old and new bloga
         array_unshift($blogs, $blog);
         
         // Put updated array in the blogposts file
-        $fp = fopen("../content/blog.json", 'w+');
+        $fp = fopen("../../content/blog.json", 'w+');
         fwrite($fp, json_encode($blogs));
         fclose($fp);
         
         // Get blogpost template
-        $fp = fopen("../post/template.php", 'w+');
-        $template = file_get_contents($fp);
-        fclose($fp);
+        $template = file_get_contents("../../post/template.php");
 
         // Create blogpost file
-        $fp = fopen("../post/".$id.".php", 'a');
+        $fp = fopen("../../post/".$id.".php", 'a');
         fwrite($fp, $template);
         fclose($fp);
-        
-        // Update history
-        $history = fopen("../content/history.html", 'a');
-        fwrite($history, "<p><b>".$_SESSION['name']."</b> heeft op <b>".date("l, j F Y")."</b> een bericht geplaatst met de naam: <b>".stripslashes(htmlspecialchars($title))."</b>");
-        fclose($history);
+
+        header("Location: ../blogs.php");
     } 
     else if(isset($_POST['update'])) {
 
@@ -51,7 +46,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         $datum = date("l, j F Y");
         $auteur = $_SESSION['name'];
         
-        $contents = file_get_contents("../content/blog.json");
+        $contents = file_get_contents("../../content/blog.json");
         $oldblogs = json_decode($contents);
         
         $newblogs = array();
@@ -72,10 +67,12 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         } 
         
         // Put updated data in blogposts file
-        $fp = fopen("../content/blog.json", 'w+');
+        $fp = fopen("../../content/blog.json", 'w+');
         fwrite($fp, json_encode($newblogs));
         fclose($fp);
         header('Location: ../index.php');
+    } else {
+        echo "Something went wrong";
     }
 }
 else {

@@ -1,6 +1,6 @@
 
         <?php
-        $sitetitle = 'Robins Website';
+        $sitetitle = 'Robins Secret Site';
         $footertext = 'Copyright Robin Boers';
         ?>
         

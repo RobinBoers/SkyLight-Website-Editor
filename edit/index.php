@@ -125,31 +125,6 @@
                     <p>Welcome to your new website! This is SkyLight Website Editor. With this program you can manage your own website, without any programming knowlegde. You can use one of the four default themes, or create one yourself with the simple theme editor. Write blogposts, and add pages, in a few clicks. And the best thing: its free!
                 </div>
                 <hr>
-
-                <div class="w3-container w3-dark-grey w3-padding-32">
-                <div class="w3-row">
-                    <div class="w3-container w3-third">
-                    <h5 class="w3-bottombar w3-border-green">Demographic</h5>
-                    <p>Language</p>
-                    <p>Country</p>
-                    <p>City</p>
-                    </div>
-                    <div class="w3-container w3-third">
-                    <h5 class="w3-bottombar w3-border-red">System</h5>
-                    <p>Browser</p>
-                    <p>OS</p>
-                    <p>More</p>
-                    </div>
-                    <div class="w3-container w3-third">
-                    <h5 class="w3-bottombar w3-border-orange">Target</h5>
-                    <p>Users</p>
-                    <p>Active</p>
-                    <p>Geo</p>
-                    <p>Interests</p>
-                    </div>
-                </div>
-                </div>
-
                 <!-- End page content -->
                 </div>
 
