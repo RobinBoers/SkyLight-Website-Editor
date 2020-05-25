@@ -15,12 +15,13 @@
             $link = $blog->link;
             $id = $blog->id;
         } else {
-            echo "Er werkt iets niet...";
+            // echo "Er werkt iets niet...";
         }
     } 
 
     include("../content/views.php");
-    $views = $views + 1; //echo $views;
+    $views = $views + 1; 
+    //echo $views;
     $fp = fopen("../content/views.php", 'w+');
     fwrite($fp, "
     <?php
