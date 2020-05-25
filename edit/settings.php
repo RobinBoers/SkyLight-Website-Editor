@@ -117,6 +117,17 @@
                         <input name="footertext" type="text" placeholder="Enter new footer text...">
                         <input name="enter" type="submit" value="OK">
                     </form>
+                    <hr>
+                    <h5>Logo</h5>
+                    <form action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data">
+                        <label for="fileToUpload">Upload new logo</label><br>
+                        <input required type="file" name="fileToUpload" id="fileToUpload">
+                        <input type="submit" value="Upload" name="submit"><br>
+                    </form><br>
+                    <form action="scripts/deletelogo.php" method="post">
+                        <label for="deletelogo">Delete logo</label><br>
+                        <input type="submit" value="Delete" name="deletelogo"><br>
+                    </form>
                 </div>
                 <hr>
 

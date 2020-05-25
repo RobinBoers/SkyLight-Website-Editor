@@ -97,7 +97,7 @@ else {
     echo("
     <p class='error'>
         Login requierd.<br>
-        <a href='index.php'>Sign In</a>
+        <a href='../index.php'>Sign In</a>
     </p>
     ");
 }

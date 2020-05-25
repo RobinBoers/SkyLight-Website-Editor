@@ -32,7 +32,6 @@ h1 a {
 }
 
 /* Settings for the themes section in the editor */
-
 .beschrijving::before {
     content: "Description: "
 }
@@ -42,7 +41,6 @@ h1 a {
 }
 
 /* Settings for the textarea in the editor */
-
 textarea {
     width: 70%;
     height: 100px;
@@ -80,34 +78,10 @@ textarea:hover {
       margin: 0;
 }
 
-/* Settings for the Getting Started box in the editor */
-.startkop {
-    width: 100%;
-    color: white;
-}
-.startkop span {
-    float: right;
-}
-#startbox {
-    padding: 10px;
-    border-radius: 5px;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-bottom: 15px;
-    background-color: darkslategrey;
-}
-#startbox p {
-    width: 70%;
-    color: white;
-}
 .smalltext {
     font-size: 9px;
 }
 
-/* Make text white */
-.white {background-color:white;padding:4px;}
-
-/* Maakt de tekst groter op een mobiele telefoon */
 
 @media all and (min-width: 1030px) {
     
@@ -169,7 +143,6 @@ blink {
 ******************************/
 
 /* Cool buttons */
-
 input[type="button" i], input[type="submit" i], input[type="reset" i], input[type="file" i]::-webkit-file-upload-button, button {
 /*    border-style: outset;*/
     border-style: solid;
@@ -183,30 +156,13 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
 }
 
 /* Hovereffect */
-
-input[type="button" i]:hover, input[type="submit" i]:hover, input[type="reset" i]:hover,input[type="file" i]::-webkit-file-upload-button:hover, button:hover {
+input[type="button" i]:hover, input[type="submit" i]:hover, input[type="reset" i]:hover, button:hover {
     transition-property: all;
     transition-duration: 0.5s;
     transition-timing-function: ease;
     transition-delay: 0s;
     border-left-style: solid;
     border-left-width: 7px;
-}
-
-/* Let the buttons in the Getting Started box look different */
-
-#startbox input[type="button" i], #startbox input[type="submit" i], #startbox input[type="reset" i], #startbox input[type="file" i]::-webkit-file-upload-button, #startbox button {
-    color: darkgreen;
-    font-weight: bold;
-    background-color: white;
-    border-color: white;
-    border-style: outset;
-}
-
-/* Press in effect */
-
-input[type="button" i]:active, input[type="submit" i]:active, input[type="reset" i]:active, input[type="file" i]::-webkit-file-upload-button:active, button:active {
-    border-style: inset !important;
 }
 
 /******************************
@@ -231,9 +187,8 @@ input[type="text" i], input[type="tel" i], input[type="email" i], input[type="pa
 }
 
 /* Remove outline */
-
-:focus {
-    outline:none;
+:focus, input[type="file" i]::-webkit-file-upload-button, input, button {
+    outline:none !important;
 }
 
 /* No border on the login screen */
@@ -241,10 +196,6 @@ input[type="text" i], input[type="tel" i], input[type="email" i], input[type="pa
      border-color: transparent !important;
 }
 
-/* hide error */
-#error {
-    display: none;
-}
 
        /*********************
       ///////////////////////
