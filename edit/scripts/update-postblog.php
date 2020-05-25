@@ -36,8 +36,15 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($fp, $template);
         fclose($fp);
 
+        // Add to history log
+        $history = fopen("../../content/history.html", 'a');
+        fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has published the blogpost ".$title."</p>");
+        fclose($history);
+
         header("Location: ../blogs.php");
     } 
+
+    // Update a post
     else if(isset($_POST['update'])) {
 
         // Get data from editor
@@ -46,11 +53,14 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         $datum = date("l, j F Y");
         $auteur = $_SESSION['name'];
         
+        // Get older blogs
         $contents = file_get_contents("../../content/blog.json");
         $oldblogs = json_decode($contents);
         
+        // Create new array
         $newblogs = array();
         
+        // Overwrite array with new post
         foreach ($oldblogs as $blog){
             if($blog->id === $id) {
                 $title = $blog->title;
@@ -70,6 +80,12 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         $fp = fopen("../../content/blog.json", 'w+');
         fwrite($fp, json_encode($newblogs));
         fclose($fp);
+
+        // Add to history log
+        $history = fopen("../../content/history.html", 'a');
+        fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has updated the blogpost ".$title."</p>");
+        fclose($history);
+
         header('Location: ../index.php');
     } else {
         echo "Something went wrong";
