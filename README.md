@@ -1,12 +1,14 @@
-# SkyLight Website Builder
-This is my biggest project. It is a website builder. You can simply create a website, by copying the files over to your server, change the default password, and your ready to go.
+# SkyLight Website Builder/Editor
+SkyLight is a flexible website builder made with html5, css3, javascript and php. It has support for third-party themes and it is highly customisable.
 
 ## Features
 - Simple dashboard
 - Views
 - Edit site-title, footertext and background
 - Add logo
-- Simple theme editor, and you can import themes from third party developers (that's only me...)
+- Powerfull theme engine
+- Large theme library
+- Blogging
 
 ## Installation
-Note: I still have to create this part...
+It's quite simple: you download this the lastest release from this GitHub repository, and you copy it to your server. After that, start your server and change the default password from root to something else. All users share the same password.
