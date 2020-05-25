@@ -102,19 +102,36 @@
 
                 <!-- Header -->
                 <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-edit"></i> New page</b></h5>
+                <h5><b><i class="fa fa-edit"></i> Update page</b></h5>
                 </header>
 
                 <div class="w3-container">
 
-                    <h2 class="title" contenteditable>Enter page name</h2>
+                    <?php
+                        $id = $_GET['id'];
+
+                        $contents = file_get_contents("../content/pages.json");
+                        $pages = json_decode($contents);
+
+                        foreach ($pages as $page){
+                            if($page->id === $id) {
+                                $title = $page->title;
+                                $text = $page->text;
+                            }
+                        } 
+
+                    ?>
+
+                    <h2 class="title"><?php echo $title; ?></h2>
 
                     <!-- Include stylesheet for Quill -->
                     <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
                     <!-- Create the editor container for Quill -->
                     <div id="editor">
-
+                        <?php
+                            echo $text;
+                        ?>
                     </div>
 
                     <!-- Include the Quill library -->
@@ -122,15 +139,15 @@
 
                     <br>
 
-                    <button onclick="submit()">Publish</button>
+                    <button onclick="submit()">Update</button>
 
                 </div>
                 <hr>
 
             	<form style="display:none !important;" class="form" action="scripts/update-postpage.php" method="post">
-                    <input id="title" type="text" name="title">
-                    <input id="content" type="text" name="text">
-                    <input type=hidden name=post value=post>
+                    <input id="content" type="text" name="pagetext-edit">
+                    <input id="id" type="hidden" name="id" value="<?php echo $_GET['id']; ?>">
+                    <input type=hidden name=update value=update>
                     <input type="submit">
                 </form>
 
@@ -175,13 +192,12 @@
                             [{ list: 'ordered' }, { list: 'bullet' }]
                             ]
                         },
-                        placeholder: 'Add page content...',
+                        placeholder: 'Add new text to update blogpost',
                         theme: 'snow'  // or 'bubble'
                     });
                     
                     function submit() {
                         document.querySelector("#content").value = document.querySelector(".ql-editor").innerHTML;
-                        document.querySelector("#title").value = document.querySelector(".title").innerHTML;
 
                         document.querySelector(".form").submit();
                     }

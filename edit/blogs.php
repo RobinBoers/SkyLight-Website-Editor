@@ -89,7 +89,7 @@
                     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
                     <a href="index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
                     <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
-                    <a href="blogs.php" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-edit"></i>  Blog</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-edit"></i>  Blog</a>
                     <a href="history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
                     <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br><br>
                 </div>
