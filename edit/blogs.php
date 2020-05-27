@@ -135,7 +135,7 @@
                                 fclose($handle);
 
                                 foreach ($blogs as $blog){ ?>
-                                    <li><a href="updatepost.php?id=<?php echo $blog->id; ?>"><?php echo $blog->title; ?></a></li>
+                                    <li><a href="updatepost.php?id=<?php echo $blog->id; ?>"><?php echo $blog->title; ?></a><a style='float:right;' href="scripts/deletepost.php?id=<?php echo $blog->id; ?>">Delete</a></li>
                                     <?php
                                 }
                             }
