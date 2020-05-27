@@ -82,7 +82,7 @@
         else {
             // Show dashboard (Thanks to W3.CSS for the template)
             ?>
-                <button class="w3-hide-large w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+                <button class="w3-hide-large w3-right w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
                 <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
