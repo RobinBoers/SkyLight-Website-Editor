@@ -135,7 +135,7 @@
                                 fclose($handle);
 
                                 foreach ($pages as $page){ ?>
-                                    <li><a href="updatepage.php?id=<?php echo $page->id; ?>"><?php echo $page->title; ?></a></li>
+                                    <li><a href="updatepage.php?id=<?php echo $page->id; ?>"><?php echo $page->title; ?></a> <a style='float:right;' href="scripts/deletepage.php?id=<?php echo $page->id; ?>">Delete</a></li>
                                     <?php
                                 }
                             }

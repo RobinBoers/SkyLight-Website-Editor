@@ -13,11 +13,13 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         
         // Create new array
         $newblogs = array();
-        
+        $title = "";
+
         // Overwrite array with new post
         foreach ($oldblogs as $blog){
             if($blog->id === $id) {
                 // do nothing, so it won't go into the new file
+                $title == $blog->title;
             }
             else {
                 array_push($newblogs, $blog); 
@@ -36,7 +38,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the blogpost ".$title."</p>");
         fclose($history);
 
-        header('Location: ../index.php');
+        header('Location: ../blogs.php');
     }
 
 }
