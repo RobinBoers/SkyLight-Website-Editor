@@ -1,5 +1,13 @@
-/* Background */
+/* 
+    basetheme.css - SkyLight Website Builder
+    Made by Robin Boers
 
+    Stylesheet from old version of SkyLight (pre-Github)
+    I'm slowly transfering stylerules to main.css
+    This stylesheet will be used for posistioning when themes engine is finished
+*/
+
+/* Background */
 body {
   background: url("/images/uploads/background.png") no-repeat center center fixed;
   background-repeat: no-repeat;
@@ -153,6 +161,7 @@ input[type="button" i], input[type="submit" i], input[type="reset" i], input[typ
     margin: 10px;
     height: 40px;
     cursor: pointer;
+    border-width:0;
 }
 
 /* Hovereffect */
@@ -344,5 +353,8 @@ input[type=range]:focus::-ms-fill-lower {
 input[type=range]:focus::-ms-fill-upper {
   background: deepskyblue;
 }
+
+.editor-nav a:hover {text-decoration: none !important;}
+
 
 /* End stylesheet */

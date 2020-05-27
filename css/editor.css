@@ -1,4 +1,9 @@
-/* Deze styleregel geldt alleen voor de editor */
+/* 
+    editor.css - SkyLight Website Builder
+    Made by Robin Boers
+
+    This stylesheet only works in the editor
+*/
 .main {
     margin-top: 7px !important;
     margin: auto;
@@ -38,3 +43,44 @@ margin-top: 7px !important;
 .active {
 background-color: #4CAF50;
 }
+
+.login-main {
+    width: 80%;
+    margin: auto;
+    height:100%;
+}
+
+.login-main-inner {
+    height: 100%;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.login-form {
+    flex: 2;
+    align-self: center;
+}
+
+.login-form-inner {
+    background-color: rgb(250, 250, 250);
+    border:1px solid grey;
+    padding:20px;
+    border-radius:10px;
+}
+
+.login-header {
+    flex:1;
+}
+
+.login-footer {
+  flex: none; /* 2 */
+}
+
+html, body, :root {
+    height:100% !important;
+}
+
+.w3-button:hover {text-decoration: none !important;}
+.editor-nav a:hover {text-decoration: none !important;}
+
