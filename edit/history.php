@@ -27,41 +27,56 @@
 
             // Show login screen
             ?>
-                <p><a href="../index.php">&larr; Terug</a></p>
-                <h1>
-                    <!-- laadicon -->
-                    <img alt="loading..." src="../images/editor/loading.svg" height="30px">&nbsp;
-                    SkyLight Website Editor
-                </h1>   
+            <div class="login-main">
+                <div class="login-main-inner">
 
-                <!-- Login form -->
+                    <!-- The header -->
 
-                <div id="loginform">
-                    <form action="login.php" method="post">
-                        <label for="name">Sign in:</label><br><br>
-                        <input required class="inlogveld" type="text" name="name" id="name" /><br>
-                        <input required class="inlogveld" type="password" name="password" id="password" /><br>
-                        <input type="hidden" name="login" value="true"> <!-- Because  I also use login.php for logout, I tell the script I want to login -->
-                        <input type="submit" name="enter" id="enter" value="Ok" /><br>
+                    <header class="login-header">
 
-                        <?php
+                        <p><a href="../index.php">&larr; Back</a></p>
 
-                            // If the users typed the wrong password, he will get a warning
-                            if(isset($_GET['wrongpass'])) {
-                                ?>
-                                    <p class="red">Password was wrong, try again</p>
+                    </header>   
+
+                    <!-- Login form -->
+
+                    <main class="login-form" id="loginform">
+                        <div class="login-form-inner">
+
+                            <h2>Sign in</h2>
+
+                            <form action="login.php" method="post">
+                                <input required class="inlogveld" type="text" name="name" id="name" /><br>
+                                <input required class="inlogveld" type="password" name="password" id="password" /><br>
+                                <input type="hidden" name="login" value="true"> <!-- Because  I also use login.php for logout, I tell the script I want to login -->
+                                <input type="submit" name="enter" id="enter" value="Ok" /><br>
+
                                 <?php
-                            }
-                        ?>
 
-                    </form>
+                                    // If the users typed the wrong password, he will get a warning
+                                    if(isset($_GET['wrongpass'])) {
+                                        ?>
+                                            <p class="red">Password was wrong, try again</p>
+                                        <?php
+                                    }
+                                ?>
+                            </form>
+
+                        </div>
+                    </main>
+                    
+                    <!-- The footer -->
+
+                    <footer class="login-footer">
+
+                        <center>
+                            <p>Made by <a href="https://github.com/RobinBoers" title="Github pagina van Robin Boers">Robin Boers</a></p>    
+                        </center>
+
+                    </footer>
+
                 </div>
-                
-                <!-- De footer -->
-                
-                <ul class="nav">
-                    Made by <a href="https://github.com/RobinBoers" title="Github pagina van Robin Boers">Robin Boers</a>
-                </ul>
+            </div>
             <?php
         }
         else {
@@ -70,7 +85,7 @@
                 <button class="w3-hide-large w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
-                <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+                <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
                 <div class="w3-container w3-row">
                     <div class="w3-col s4">
                     <img src="https://www.geheimesite.nl/images/nindo/profiel.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -85,7 +100,7 @@
                 <div class="w3-container">
                     <h5>Dashboard</h5>
                 </div>
-                <div class="w3-bar-block">
+                <div class="w3-bar-block editor-nav">
                     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
                     <a href="index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
                     <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
@@ -98,19 +113,8 @@
                 <!-- Overlay effect when opening sidebar on small screens -->
                 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-                <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+                <div class="w3-main" style="margin-left:300px;">
 
-                <!-- Header -->
-                <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-history fa-fw"></i> History</b></h5>
-                </header>
-
-                <div class="w3-container w3-padding-16">
-                    <iframe style='width:100%;border:none;' src="../content/history.html">
-                </div>
-                
-                <!-- End page content -->
-                </div>
                 <script>
 
                 // Get the Sidebar
@@ -136,6 +140,18 @@
                 overlayBg.style.display = "none";
                 }
                 </script>
+
+                <!-- Header -->
+                <header class="w3-container" style="padding-top:22px">
+                <h5><b><i class="fa fa-history fa-fw"></i> History</b></h5>
+                </header>
+
+                <div class="w3-container w3-padding-16">
+                    <iframe style='width:100%;border:none;' src="../content/history.html">
+                </div>
+                
+                <!-- End page content -->
+                </div>
             <?php
         }
     ?>

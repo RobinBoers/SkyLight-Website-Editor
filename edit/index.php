@@ -85,7 +85,7 @@
                 <button class="w3-hide-large w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
-                <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+                <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
                 <div class="w3-container w3-row">
                     <div class="w3-col s4">
                     <img src="https://www.geheimesite.nl/images/nindo/profiel.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -113,7 +113,7 @@
                 <!-- Overlay effect when opening sidebar on small screens -->
                 <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
-                <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+                <div class="w3-main" style="margin-left:300px;">
 
                 <!-- Header -->
                 <header class="w3-container" style="padding-top:22px">

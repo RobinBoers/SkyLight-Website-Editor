@@ -5,25 +5,27 @@
     This stylesheet only works in the editor
 */
 .main {
-    margin-top: 7px !important;
     margin: auto;
-/*                width: 80%;*/
 }
 body {
     background: none !important;
     background-color: #Idf5G6 !important;
-}/* #35df9c is kleur */
+}
+
 :root {
     --color-one:#35df9c;
 /*                --color-two:#1ebf7f;*/
 }
+
 input, button, input[type="file" i]::-webkit-file-upload-button:hover {
     transition: none !important;
 }
+
 input[type="button" i]:hover, input[type="submit" i]:hover, input[type="reset" i]:hover, button:hover {
     border-left-width: 3px  !important;
     border-left-color: var(--color-one) !important;
 }
+
 a {
     font-weight: bold;
     color: var(--color-one);
@@ -37,7 +39,7 @@ a {
 */
 
 main {
-margin-top: 7px !important;
+/* margin-top: 7px !important; */
 }
 
 .active {
@@ -84,3 +86,6 @@ html, body, :root {
 .w3-button:hover {text-decoration: none !important;}
 .editor-nav a:hover {text-decoration: none !important;}
 
+.w3-sidebar {
+    height:100%;
+}
