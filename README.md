@@ -7,7 +7,7 @@ SkyLight is a flexible website builder made with html5, css3, javascript and php
 - Edit site-title, footertext and background
 - Add logo
 - Powerfull theme engine
-- Large theme library
+- Large theme library (coming soon!)
 - Blogging
 
 ## Installation
