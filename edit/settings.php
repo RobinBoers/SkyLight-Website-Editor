@@ -144,6 +144,14 @@
                         <label for="deletelogo">Delete logo</label><br>
                         <input type="submit" value="Delete" name="deletelogo"><br>
                     </form>
+                    <hr>
+                    <h5>Security</h5>
+                    <form action="scripts/changepassword.php" method="post">
+                        <label>Change password</label><br>
+                        <input name="pswd" type="password" placeholder="Type old password..."><br>
+                        <input name="newpswd" type="password" placeholder="Type new password..."><br>
+                        <input name="changepass" type="submit" value="OK">
+                    </form>
                 </div>
                 <hr>
 
