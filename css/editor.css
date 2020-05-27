@@ -9,7 +9,7 @@
 }
 body {
     background: none !important;
-    background-color: #Idf5G6 !important;
+    /* background-color: #Idf5G6 !important; */
 }
 
 :root {
@@ -38,9 +38,9 @@ a {
 }
 */
 
-main {
-/* margin-top: 7px !important; */
-}
+/* main {
+margin-top: 7px !important;
+} */
 
 .active {
 background-color: #4CAF50;
