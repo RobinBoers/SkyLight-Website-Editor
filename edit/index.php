@@ -85,7 +85,7 @@
                 <button class="w3-hide-large w3-right w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
-                <nav class="w3-sidebar w3-collapse w3-white" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
+                <nav class="w3-sidebar w3-collapse w3-light-grey" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
                 <div class="w3-container w3-row">
                     <div class="w3-col s4">
                     <img src="https://www.geheimesite.nl/images/nindo/profiel.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -130,6 +130,26 @@
                         </div>
                         <div class="w3-clear"></div>
                         <h4>Views</h4>
+                        </div>
+                    </div>
+                    <div class="w3-quarter">
+                        <div class="w3-container w3-blue w3-padding-16">
+                        <div class="w3-left"><i class="fa fa-edit w3-xxxlarge"></i></div>
+                        <div class="w3-right">
+                            <h3><?php include "analytics/countblogs.php"; ?></h3>
+                        </div>
+                        <div class="w3-clear"></div>
+                        <h4>Blogposts</h4>
+                        </div>
+                    </div>
+                    <div class="w3-quarter">
+                        <div class="w3-container w3-green w3-padding-16">
+                        <div class="w3-left"><i class="fa fa-clone w3-xxxlarge"></i></div>
+                        <div class="w3-right">
+                            <h3><?php include "analytics/countpages.php"; ?></h3>
+                        </div>
+                        <div class="w3-clear"></div>
+                        <h4>Pages</h4>
                         </div>
                     </div>
                 </div>
