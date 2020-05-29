@@ -1,1 +1,15 @@
-/* just made by Robinjo2007 */
+/* 
+    theme.css - SkyLight Website Builder
+    Made by Robin Boers
+
+    This stylesheet is the new themes stylesheet. 
+    I'm slowly transfering stylerules from the basetheme to this stylesheet
+*/
+
+main, header, footer {
+    width: 80%;
+    background-color: ghostwhite;
+    margin:auto;
+    padding: 10px;
+    padding-left:20px;
+}
