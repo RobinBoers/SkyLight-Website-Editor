@@ -106,8 +106,9 @@
                     <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
                     <a href="blogs.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit"></i>  Blog</a>
                     <a href="history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-                    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fa fa-paint-brush"></i>  Themes</a>
-                    <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><a href="about.php" class="w3-bar-item w3-button w3-padding"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
+                    <a href="themes.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paint-brush"></i>  Themes</a>
+                    <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+                    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
                 </div>
                 </nav>
                 
@@ -118,30 +119,17 @@
 
                 <!-- Header -->
                 <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fa fa-paint-brush"></i> Themes</b></h5>
+                <h5><b><i class="fas fa-info-circle"></i> About</b></h5>
                 </header>
 
                 <div class="w3-container">
-                    <p>Theme support is finally here!</p>
                     <p>
-                        With this tool you can download and import the themes I made, as well as third-party ones.<br>
-                        If you want to make your own themes, take a look at this tutorial: <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-create-custom-themes">How to create custom themes (GitHub Wiki)</a><br>
-                        <!-- Below you can see the theme library. --> After downloading, import using the form below
+                        SkyLight is a flexible website builder made with html5, css3, javascript and php. 
+                        It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
                     </p>
-
-                    <h5>Import</h5>
-
-                    <form method="post" action="scripts/uploadtheme.php" enctype="multipart/form-data">
-
-                        <label>Select zip file</label>  
-                        <input type="file" name="zip_file">
-                        <input type="submit" name="submit" value="Upload">  
-
-                    </form> 
-
-                    <h5>Theme selector</h5>
-                    <p>SkyLight Website Editor comes with a few default themes. I'm currently working on a proper selection screen, but for now you can find the themes on my GitHub profile.<br>
-                    Here is a link to my GitHub: <a href="https://github.com/RobinBoers/SkyLight-themelibrary">SkyLight-themelibrary</a>
+                    <p>
+                        <b>Version:</b> v0.02-beta
+                    </p>
                 </div>
                 
                 <!-- End page content -->

@@ -22,7 +22,7 @@ It's quite simple: you download this the lastest release from this GitHub reposi
 ## For help or suggestions
 If you need help or have any suggestions, you can email me at robin@geheimesite.nl<br>
 I'd like to hear from you!<br>
-I also made a wiki, where you can find a tutorials about SkyLight
+I also made a wiki, where you can find tutorials about SkyLight
 
 ### Links: 
 - [Theme Library (GitHub)](https://github.com/RobinBoers/SkyLight-themelibrary)
