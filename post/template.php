@@ -10,6 +10,7 @@
             $pagetitle = $blog->title;
             $content = $blog->text;
             $auteur = $blog->auteur;
+            $date = $blog->datum;
             $tags = $blog->tags;
             $taglink = $blog->taglink;
             $link = $blog->link;

@@ -11,7 +11,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         $id = uniqid();
         
         // Create an array
-        $page = array("id" => $id, "title" => $title, "text" => $text, "link" => "/post/".$id.".php");
+        $page = array("id" => $id, "title" => $title, "text" => $text, "link" => "/p/".$id.".php");
         
         // Get the older pages
         $oldercontent = file_get_contents("../../content/pages.json");
