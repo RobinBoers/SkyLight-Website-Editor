@@ -78,6 +78,17 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                             echo "replaced old index.php<br>";
                          }
+
+                         else if($file == "blog.php") {
+
+                            echo "found blog.php<br>";
+
+                            unlink("../../content/blog.php"); 
+                            copy($path."/blog.php", "../../content/blog.php"); 
+                        
+
+                            echo "replaced old blog.php<br>";
+                         }
                          
                          else if ($file == "." || $file == "..") {
 
