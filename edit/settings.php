@@ -124,33 +124,33 @@
                 <div class="w3-container">
                     <h5>Site information</h5>
                     <form action="scripts/update-siteinformation.php" method="post">
-                        <label>Site title</label>
+                        <label for="sitetitle">Site title</label>
                         <input name="sitetitle" type="text" placeholder="Enter new site title...">
                         <input name="enter" type="submit" value="OK">
                     </form>
                     <form action="scripts/update-siteinformation.php" method="post">
-                        <label>Footer text</label>
+                        <label for="footertext">Footer text</label>
                         <input name="footertext" type="text" placeholder="Enter new footer text...">
                         <input name="enter" type="submit" value="OK">
                     </form>
                     <hr>
-                    <h5>Logo</h5><br>
+                    <h5><b><i class="fa fa-lock"></i> Security</b></h5>
+                    <h5>Change password</h5>
+                    <form action="scripts/changepassword.php" method="post">
+                        <label for="pswd">Old password</label> <input name="pswd" type="password" placeholder="Type old password..."><br>
+                        <label for="newpswd">New password</label> <input name="newpswd" type="password" placeholder="Type new password..."><input name="changepass" type="submit" value="OK">
+                        
+                    </form>
+                    <hr>
+                    <h5><b><i class="fa fa-image"></i> Logo</b></h5><br>
+                    <h5>Upload new logo</h5>
                     <form action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data">
-                        <label for="fileToUpload">Upload new logo</label><br>
                         <input required type="file" name="fileToUpload" id="fileToUpload">
                         <input type="submit" value="Upload" name="submit"><br>
                     </form><br>
+                    <h5>Delete logo</h5>
                     <form action="scripts/deletelogo.php" method="post">
-                        <label for="deletelogo">Delete logo</label><br>
                         <input type="submit" value="Delete" name="deletelogo"><br>
-                    </form>
-                    <hr>
-                    <h5>Security</h5>
-                    <form action="scripts/changepassword.php" method="post">
-                        <label>Change password</label><br>
-                        <input name="pswd" type="password" placeholder="Type old password..."><br>
-                        <input name="newpswd" type="password" placeholder="Type new password..."><br>
-                        <input name="changepass" type="submit" value="OK">
                     </form>
                 </div>
                 <hr>
