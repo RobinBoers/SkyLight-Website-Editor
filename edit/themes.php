@@ -128,17 +128,20 @@
                         If you want to make your own themes, take a look at this tutorial: <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-create-custom-themes">How to create custom themes (GitHub Wiki)</a><br>
                         <!-- Below you can see the theme library. --> After downloading, import using the form below
                     </p>
+
                     <h5>Import</h5>
 
                     <form method="post" action="scripts/uploadtheme.php" enctype="multipart/form-data">
 
                         <label>Select zip file</label>  
-                        <input type="file" name="zip_file"><br>
-
+                        <input type="file" name="zip_file">
                         <input type="submit" name="submit" value="Upload">  
 
                     </form> 
 
+                    <h5>Theme selector</h5>
+                    <p>SkyLight Website Editor comes with a few default themes. I'm currently working on a proper selection screen, but for now you can find the themes on my GitHub profile.<br>
+                    Here is a link to my GitHub: <a href="https://github.com/RobinBoers/SkyLight-themelibrary">SkyLight-themelibrary</a>
                 </div>
                 
                 <!-- End page content -->
