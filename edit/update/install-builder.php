@@ -19,7 +19,7 @@
         $zip = new ZipArchive; 
         $filename = "package.zip";
         $dir = "../../";
-        $destiny = "../../";
+        $destiny = "../";
         
         function Unzip($dir, $file, $destiny) {
             $dir .= DIRECTORY_SEPARATOR;
