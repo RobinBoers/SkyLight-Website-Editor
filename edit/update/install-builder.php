@@ -74,6 +74,7 @@
             }
         }
         Unzip($dir,$filename);
+        unlink($filename);
 
     }
     else {
