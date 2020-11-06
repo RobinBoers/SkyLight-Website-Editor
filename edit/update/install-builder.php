@@ -18,10 +18,10 @@
         
         $zip = new ZipArchive; 
         $filename = "package.zip";
-        $dir = "../../";
-        $destiny = "../";
+        $dir = "../";
+        // $destiny = "../";
         
-        function Unzip($dir, $file, $destiny) {
+        function Unzip($dir, $file, $destiny="") {
             $dir .= DIRECTORY_SEPARATOR;
             $path_file = $dir . $file;
             $zip = zip_open($file);
@@ -73,7 +73,7 @@
                 zip_close($zip);
             }
         }
-        Unzip($dir,$filename,$destiny);
+        Unzip($dir,$filename);
 
     }
     else {
