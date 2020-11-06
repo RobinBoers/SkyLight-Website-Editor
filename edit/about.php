@@ -123,17 +123,43 @@
                 </header>
 
                 <div class="w3-container">
+                    <?php
+                        // Get lastest version
+                        $currentversion = "v0.03-beta (preview)";
+                        $latestversion = file_get_contents('https://code.geheimesite.nl/package/SkyLight/latest.txt');
+                    ?>
+
                     <p>
                         SkyLight is a flexible website builder made with html5, css3, javascript and php. 
                         It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
                     </p>
-                    <p>
-                        <b>Version:</b> v0.02.1-beta (security patch)
-                    </p>
-                    <p>
-                        <a href="changelog.php">View changelog</a>
-                    </p>
 
+                    <?php if($currentversion === $latestversion) { ?>
+
+                        <p>
+                            <b>Version:</b> <?php echo $currentversion; ?>
+                        </p>
+
+                        <p>
+                            <a href="changelog.php">View changelog</a>
+                        </p>
+
+                    <?php } else { ?>
+
+                        <p>
+                            You are not running the latest version of SkyLight.<br>
+                            Update to the new version for security patches and the newest features!<br>
+                            <a href="code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
+                        </p>
+                        <p>
+                            <b>Current version:</b> <?php echo $currentversion; ?><br>
+                            <b>Latest version:</b> <?php echo $latestversion; ?>
+                        </p>
+                        <p>
+                            <a href="update/index.php">Update now</a>
+                        </p>
+
+                    <?php } ?>
 
                 </div>
                 
