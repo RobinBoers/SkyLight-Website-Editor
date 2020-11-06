@@ -123,6 +123,7 @@
                 </header>
 
                 <div class="w3-container">
+                    <!-- Changelog from github -->
                     <h3>What's new?</h3>
                     <p>
                         <b>v0.02.1-beta</b> This patch fixes the bug that could cause code-injection, <br>
