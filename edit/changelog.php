@@ -108,7 +108,7 @@
                     <a href="history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
                     <a href="themes.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paint-brush"></i>  Themes</a>
                     <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
-                    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
+                    <a href="about.php" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
                 </div>
                 </nav>
                 
@@ -123,16 +123,28 @@
                 </header>
 
                 <div class="w3-container">
+                    <h3>What's new?</h3>
                     <p>
-                        SkyLight is a flexible website builder made with html5, css3, javascript and php. 
-                        It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
-                    </p>
-                    <p>
-                        <b>Version:</b> v0.02.1-beta (security patch)
-                    </p>
-                    <p>
-                        <a href="changelog.php">View changelog</a>
-                    </p>
+                        <b>v0.02.1-beta</b> This patch fixes the bug that could cause code-injection, <br>
+                        and passwords are now hashed, and not stored as plain text.<br><hr>
+                        <b>v0.02-beta</b> Almost a month ago, I released the first beta of SkyLight Website Builder! I worked a lot on it since then and added these features:<br>
+                        - Theme support<br>
+                        - Second default theme<br>
+                        - Menu support<br>
+                        - Wiki (for help and tutorials)<br>
+                        - Fixed bugs in pages module<br>
+                        - About tab (for version information)<br>
+                        Use on own risk!<br><hr>
+                        <b>v0.01-beta</b> I've been working on this project for over a few months now, <br>
+                        and I'm really exited to announce that it is almost done.<br>
+                        Features in this release:<br>
+                        - blogging<br>
+                        - static pages<br>
+                        - custom themes<br>
+                        - custom logos (if you're theme supports it)<br>
+                        Theme library is coming soon!<br>
+                        Use on own risk!<br>
+
 
 
                 </div>
