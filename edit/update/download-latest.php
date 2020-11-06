@@ -14,22 +14,26 @@
         // Get lastest version
         $version = file_get_contents('https://code.geheimesite.nl/package/SkyLight/latest.txt');
         echo '> Downloading version '.$version.'<br>';
+        echo '> Do not close this windows until download is completed<br>';
 
         // Initialize a file URL to the variable 
         $url = 'https://github.com/RobinBoers/SkyLight-Website-Editor/releases/download/'.$version.'/package.zip'; 
         
         // Set destination 
-        $file_name = '../content/uploads/package.zip'; 
+        $filename = 'package.zip'; 
             
         // Use file_get_contents() function to get the file 
         // from url and use file_put_contents() function to 
-        if(file_put_contents( $file_name,file_get_contents($url))) { 
+        if(file_put_contents( $filename,file_get_contents($url))) { 
             // Debug message
             echo '> Comleted downloading version '.$version.'<br>';
+            echo '> <a href="index.php">Back</a><br>'; 
         } 
         else { 
             // Debug message
             echo '> Failed downloading version '.$version.'<br>'; 
+            unlink($filename);
+            echo '> <a href="index.php">Try again</a><br>'; 
         } 
     }
     else {
