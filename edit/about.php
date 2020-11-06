@@ -149,7 +149,7 @@
                         <p>
                             You are not running the latest version of SkyLight.<br>
                             Update to the new version for security patches and the newest features!<br>
-                            <a href="code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
+                            <a href="https://code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
                         </p>
                         <p>
                             <b>Current version:</b> <?php echo $currentversion; ?><br>
