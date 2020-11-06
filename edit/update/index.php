@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/basetheme.css" rel="stylesheet" type="text/css">
+    <link href="../../css/basetheme.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="../css/editor.css" rel="stylesheet" type="text/css">
+    <link href="../../css/editor.css" rel="stylesheet" type="text/css">
     <title>Dashboard - SkyLight Website Editor</title>
 </head>
 <body>
@@ -34,7 +34,7 @@
 
                     <header class="login-header">
 
-                        <p><a href="../index.php">&larr; Back</a></p>
+                        <p><a href="../../index.php">&larr; Back</a></p>
 
                     </header>   
 
@@ -92,7 +92,7 @@
                     </div>
                     <div class="w3-col s8 w3-bar">
                     <span>Welcome, <strong><?php echo $_SESSION['name']; ?></strong></span><br>
-                    <a href='../index.php'>&larr; Back</a> |
+                    <a href='../../index.php'>&larr; Back</a> |
                     <a href="login.php?logout">Logout</a>
                     </div>
                 </div>
@@ -102,13 +102,13 @@
                 </div>
                 <div class="w3-bar-block editor-nav">
                     <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-                    <a href="index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
-                    <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
-                    <a href="blogs.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit"></i>  Blog</a>
-                    <a href="history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
-                    <a href="themes.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paint-brush"></i>  Themes</a>
-                    <a href="settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
-                    <a href="#" class="w3-bar-item w3-button w3-padding w3-blue"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
+                    <a href="../index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
+                    <a href="../pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
+                    <a href="../blogs.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit"></i>  Blog</a>
+                    <a href="../history.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-history fa-fw"></i>  History</a>
+                    <a href="../themes.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-paint-brush"></i>  Themes</a>
+                    <a href="../settings.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a>
+                    <a href="../about.php" class="w3-bar-item w3-button w3-padding"><i class="fas fa-info-circle fa-fw"></i>  About</a><br><br>
                 </div>
                 </nav>
                 
@@ -119,47 +119,43 @@
 
                 <!-- Header -->
                 <header class="w3-container" style="padding-top:22px">
-                <h5><b><i class="fas fa-info-circle"></i> About</b></h5>
+                <h5><b><i class="fas fa-cogs"></i> Update</b></h5>
                 </header>
 
                 <div class="w3-container">
                     <?php
                         // Get lastest version
-                        $currentversion = file_get_contents('update/version.txt', true);
+                        $currentversion = file_get_contents('./version.txt', true);
                         $latestversion = file_get_contents('https://code.geheimesite.nl/package/SkyLight/latest.txt');
-                    ?>
 
-                    <p>
-                        SkyLight is a flexible website builder made with html5, css3, javascript and php. 
-                        It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
-                    </p>
+                        if($currentversion === $latestversion) {?>
 
-                    <?php if($currentversion === $latestversion) { ?>
+                        <p> You're running the latest version of SkyLight. </p>
+
+                    <?php } else{if(!file_exists('package.zip')) { ?>
 
                         <p>
-                            <b>Version:</b> <?php echo $currentversion; ?>
+                            Please make sure to backup your userdata before updating.<br>
+                            Checkout <a hef="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
                         </p>
 
                         <p>
-                            <a href="changelog.php">View changelog</a>
+                            <a href="download-latest.php">Download the update</a>
                         </p>
 
                     <?php } else { ?>
 
                         <p>
-                            You are not running the latest version of SkyLight.<br>
-                            Update to the new version for security patches and the newest features!<br>
-                            <a href="code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
-                        </p>
-                        <p>
-                            <b>Current version:</b> <?php echo $currentversion; ?><br>
-                            <b>Latest version:</b> <?php echo $latestversion; ?>
-                        </p>
-                        <p>
-                            <a href="update/index.php">Update now</a>
+                            Please make sure to backup your userdata before updating.<br>
+                            Checkout <a hef="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
                         </p>
 
-                    <?php } ?>
+                        <p>
+                            Update successfully downloaded.<br>
+                            <a href="install-builder.php">Install the update</a>
+                        </p>
+
+                    <?php }} ?>
 
                 </div>
                 
