@@ -24,8 +24,10 @@
         
             // Unzip Path 
             $zip->extractTo('../../'); 
+            echo $zip->extractTo('../../'); 
             $zip->close(); 
-            echo '> Install successfull'; 
+            echo '> Install successfull <br>'; 
+            echo '> <a href="index.php">Back</a><br>'; 
 
         } else { 
             echo '> Install failed'; 
