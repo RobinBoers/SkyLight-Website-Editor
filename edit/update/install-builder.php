@@ -76,7 +76,7 @@
         Unzip($dir,$filename);
         unlink($filename);
         echo '> Update completed<br>';
-        echo '> You are now running version '.$version;
+        echo '> You are now running version '.$version.'<br>';
         echo '> <a href="index.php">Back</a>';
 
     }

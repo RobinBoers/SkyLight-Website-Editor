@@ -124,9 +124,8 @@
                 <div class="w3-container">
                     <p>Theme support is finally here!</p>
                     <p>
-                        With this tool you can download and import the themes I made, as well as third-party ones.<br>
-                        If you want to make your own themes, take a look at this tutorial: <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-create-custom-themes">How to create custom themes (GitHub Wiki)</a><br>
-                        <!-- Below you can see the theme library. --> After downloading, import using the form below
+                        To activate a theme, download one of the ones I made, or find third-party ones,<br>
+                        and import the ZiP files with the downloadbutton below.
                     </p>
 
                     <h5>Import</h5>
@@ -140,8 +139,7 @@
                     </form> 
 
                     <h5>Theme selector</h5>
-                    <p>SkyLight Website Editor comes with a few default themes. I'm currently working on a proper selection screen, but for now you can find the themes on my GitHub profile.<br>
-                    Here is a link to my GitHub: <a href="https://github.com/RobinBoers/SkyLight-themelibrary">SkyLight-themelibrary</a>
+                    <iframe src="https://robinboers.github.io/SkyLight-themelibrary/" width="100%" height="500px" style="border:0px solid white;" title="Theme Library"></iframe> 
                 </div>
                 
                 <!-- End page content -->
