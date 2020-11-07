@@ -64,13 +64,34 @@
         // Debug messages
         echo "> numfiles: " . $zip->numFiles . "<br>";
         echo "> status: " . $zip->status . "<br>";
-        echo "> done: <a href='download-data.php'>download</a><br>";
+        // echo "> done: <a href='download-data.php'>download</a><br>";
 
         // All files are added, so close the zip file.
         $zip->close();
 
-        // Check if successful
-        return file_exists($filename);
+        // Get file information
+        echo '> content type: '.mime_content_type($filename);
+
+        // Check if file exists
+        if (file_exists($filename)) {
+
+            // Fix for not working in explorer
+            ob_clean();
+            ob_end_flush();
+
+            // Correct headers
+            header('Content-Type: application/zip');
+            header('Content-Disposition: attachment; filename="'.basename($filename).'"');
+            header('Content-Length: '.filesize($filename));
+
+            // Download file
+            flush();
+            readfile($filename);
+
+            // Delete file
+            unlink($filename);
+            exit;
+        }
 
     }
     else {
