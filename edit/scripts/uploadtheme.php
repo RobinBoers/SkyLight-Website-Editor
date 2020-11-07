@@ -1,4 +1,7 @@
 <?php
+
+include("../functions/rmdir.php");
+
 session_start();
 if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
@@ -107,7 +110,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
                     unlink($location); 
                     
                     // // remove extract dir
-                    // rmdir($path . $name);  
+                    deleteDirectory($path);
 
                     header("Location: ../themes.php?success");
 

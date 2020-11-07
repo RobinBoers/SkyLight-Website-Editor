@@ -1,4 +1,7 @@
 <?php
+
+include("../functions/rmdir.php");
+
 session_start();
 if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
@@ -138,11 +141,11 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
                     
                     // delete zip file
                     unlink($location); 
-                    
-                    // // remove extract dir
-                    // rmdir($path . $name);  
 
-                    header("Location: ../themes.php?success");
+                    // remove extract dir
+                    deleteDirectory($path);
+
+                    // header("Location: ../settings.php?success-restore");
 
                 }  
             }  
