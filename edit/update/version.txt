@@ -1,1 +1,1 @@
-v0.03-beta (preview)
+v0.03-beta
