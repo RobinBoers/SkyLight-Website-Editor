@@ -159,7 +159,12 @@
 
                 <div class="w3-container">
                     <h5>Welcome</h5>
-                    <p>Welcome to your new website! This is SkyLight Website Editor. With this program you can manage your own website, without any programming knowlegde. You can use one of the four default themes, or create one yourself with the simple theme editor. Write blogposts, and add pages, in a few clicks. And the best thing: its free!
+                    <p>Welcome to your new website! This is SkyLight Website Editor. With this program you can manage your own website, without any programming knowlegde. You can use one of the two themes, or create one yourself with with the powerfull theming API. Write blogposts, and add pages, in a few clicks.<br>And the best thing: its free!</p>
+                    <hr>
+                    <h5>Need help?</h5>
+                    <p>If you need help setting up SkyLight, installing themes and configuring stuff, check out the wiki.<br>
+                    It's located at my <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki">GitHub repo</a>. If you have any other questions, feel free to email me at <a href="mailto:robin@geheimesite.nl">robin@geheimesite.nl</a>
+                    </p>
                 </div>
                 <hr>
                 <!-- End page content -->
