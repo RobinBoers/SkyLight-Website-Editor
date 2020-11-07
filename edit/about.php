@@ -134,7 +134,22 @@
                         It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
                     </p>
 
-                    <?php if($currentversion === $latestversion) { ?>
+                    <?php if (strpos($currentversion, 'preview') !== false) { ?>
+
+                        <p class="w3-text-red">
+                            You are running a preview build of SkyLight.<br>
+                            If you encounter any bugs, please report them at <a target="_blank" href="https://github.com/RobinBoers/SkyLight-Website-Editor/issues">the bugtracker</a>.
+                        </p>
+
+                        <p>
+                            <b>Version:</b> <?php echo $currentversion; ?>
+                        </p>
+
+                        <p>
+                            <a href="changelog.php">View changelog</a>
+                        </p>
+
+                    <?php } elseif($currentversion === $latestversion) { ?>
 
                         <p>
                             <b>Version:</b> <?php echo $currentversion; ?>
@@ -146,7 +161,7 @@
 
                     <?php } else { ?>
 
-                        <p>
+                        <p class="w3-text-red">
                             You are not running the latest version of SkyLight.<br>
                             Update to the new version for security patches and the newest features!<br>
                             <a href="https://code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
