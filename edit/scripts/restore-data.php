@@ -89,7 +89,7 @@
                         }
                         Unzip($dir,$filename);
                         unlink($filename);
-                        // header("Location: settings.php?success-restore");
+                        header("Location: ../settings.php?success-restore");
                     }
                 }   
                 else {
@@ -97,7 +97,7 @@
                     echo("
                     <p class='error'>
                         Please upload a valid zipfile.<br>
-                        <a href='settings.php'>Back</a>
+                        <a href='../settings.php'>Back</a>
                     </p>
                     ");
                 }
@@ -108,11 +108,11 @@
                 echo("
                 <p class='error'>
                     Please upload a valid zipfile.<br>
-                    <a href='settings.php'>Back</a>
+                    <a href='../settings.php'>Back</a>
                 </p>
                 ");
             }
-            
+
         }
 
     }

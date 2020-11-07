@@ -49,7 +49,7 @@
         }
 
         // // Add images directory
-        // if ($handle = opendir('../../images/'))
+        // if ($handle = opendir('../../images/') && is_dir_empty('../../images/'))
         // {
         //     while (false !== ($entry = readdir($handle)))
         //     {
