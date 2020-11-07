@@ -26,14 +26,14 @@
         }
 
         // Add files to the zip file
-        $zip->addFile('../../content/blog.json', 'blog.json');
-        $zip->addFile('../../content/pages.json', 'pages.json');
-        $zip->addFile('../../content/siteinformation.php', 'siteinformation.php');
-        $zip->addFile('../../content/views.php', 'views.php');
-        $zip->addFile('../../content/menu.php', 'menu.php');
-        $zip->addFile('../../content/logo.php', 'logo.php');
-        $zip->addFile('../../content/history.html', 'history.html');
-        $zip->addFile('../password.txt', 'password.txt');
+        $zip->addFile('../../content/blog.json', 'content/blog.json');
+        $zip->addFile('../../content/pages.json', 'content/pages.json');
+        $zip->addFile('../../content/siteinformation.php', 'content/siteinformation.php');
+        $zip->addFile('../../content/views.php', 'content/views.php');
+        $zip->addFile('../../content/menu.php', 'content/menu.php');
+        $zip->addFile('../../content/logo.php', 'content/logo.php');
+        $zip->addFile('../../content/history.html', 'content/history.html');
+        $zip->addFile('../password.txt', 'edit/password.txt');
 
         // Add pages directory
         if ($handle = opendir('../../p/'))
@@ -47,6 +47,19 @@
             }
             closedir($handle);
         }
+
+        // // Add images directory
+        // if ($handle = opendir('../../images/'))
+        // {
+        //     while (false !== ($entry = readdir($handle)))
+        //     {
+        //         if ($entry != "." && $entry != "..")
+        //         {
+        //             $zip->addFile('../../images/'.$entry, 'images/'.$entry);
+        //         }
+        //     }
+        //     closedir($handle);
+        // }
 
         // Add post directory
         if ($handle = opendir('../../post/'))
