@@ -128,11 +128,20 @@
                         $currentversion = file_get_contents('./version.txt', true);
                         $latestversion = file_get_contents('https://code.geheimesite.nl/package/SkyLight/latest.txt');
 
-                        if($currentversion === $latestversion) {?>
+                        if($currentversion === $latestversion || strpos($currentversion, 'preview') !== false) {?>
+
+                         <!-- Popup if install was successfull -->
+                        <?php if(isset($_GET['success'])) { 
+                            echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Update successfully installed.</b></p>'; 
+                        }?>
 
                         <p> You're running the latest version of SkyLight. </p>
 
                     <?php } else{if(!file_exists('package.zip')) { ?>
+
+                        <p>
+                            Update to version <?php echo $latestversion; ?> available
+                        </p>
 
                         <p>
                             Please make sure to backup your userdata before updating.<br>

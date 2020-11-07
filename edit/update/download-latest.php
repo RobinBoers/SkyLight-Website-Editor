@@ -28,6 +28,7 @@
             // Debug message
             echo '> Comleted downloading version '.$version.'<br>';
             echo '> <a href="index.php">Back</a><br>'; 
+            header("Location: index.php");
         } 
         else { 
             // Debug message
