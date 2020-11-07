@@ -145,7 +145,7 @@
 
                         <p>
                             Please make sure to backup your userdata before updating.<br>
-                            Checkout <a hef="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
+                            Checkout <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
                         </p>
 
                         <p>
