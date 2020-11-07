@@ -123,6 +123,12 @@
                 </header>
 
                 <div class="w3-container">
+
+                    <!-- Popup if install was successfull -->
+                    <?php if(isset($_GET['success-restore'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Userdata successfully restored.</b></p>'; 
+                    }?>
+
                     <h5>Site information</h5>
                     <form action="scripts/update-siteinformation.php" method="post">
                         <label for="sitetitle">Site title</label>
@@ -159,7 +165,8 @@
                         <input type="submit" value="Download" name="submit"><br>
                     </form><br>
                     <h5>Restore userdata from backup</h5>
-                    <form action="scripts/restore-data.php" method="post">
+                    <form action="scripts/restore-data.php"  enctype="multipart/form-data" method="post">
+                        <input type="file" name="zip_file">
                         <input type="submit" value="Restore" name="submit"><br>
                     </form>
                 </div>
