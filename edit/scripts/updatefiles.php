@@ -20,6 +20,8 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
             echo "Downloaded editor.css<br>";
         }
 
+        header("Location: ../update/index.php?success-updatecss");
+
     } else {
         echo "Something went wrong";
     }

@@ -123,6 +123,12 @@
                 </header>
 
                 <div class="w3-container">
+
+                    <!-- Popup update css successfull -->
+                    <?php if(isset($_GET['success-updatecss'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Successfully updated css files.</b></p>'; 
+                    }?>
+
                     <?php
                         // Get lastest version
                         $currentversion = file_get_contents('./version.txt', true);

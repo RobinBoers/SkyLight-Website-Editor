@@ -194,6 +194,10 @@
                         <input type="file" name="zip_file">
                         <input type="submit" value="Restore" name="submit"><br>
                     </form>
+                    <h5>Update optional files</h5>
+                    <p>
+                        <a href="scripts/updatefiles.php?css">Update css files</a>
+                    </p>
                 </div>
                 <hr>
 
