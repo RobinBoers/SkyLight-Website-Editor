@@ -38,7 +38,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the page ".$title."</p>");
         fclose($history);
 
-        header('Location: ../pages.php');
+        header('Location: ../pages.php?success-deleted');
     }
 
 }

@@ -139,6 +139,21 @@
                         echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Logo successfully deleted.</b></p>'; 
                     }?>
 
+                    <!-- Popup if password change was successfull -->
+                    <?php if(isset($_GET['success-passchange'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Password changed successfully.</b></p>'; 
+                    }?>
+
+                    <!-- Popup if user enterd wrong password (password change) -->
+                    <?php if(isset($_GET['error-passchange'])) { 
+                        echo '<p class="w3-text-red"> <b><i class="fa fa-times"></i> Wrong password</b></p>'; 
+                    }?>
+
+                    <!-- Popup if password change was successfull -->
+                    <?php if(isset($_GET['success-siteinfo'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Site Inforamtion updated successfully.</b></p>'; 
+                    }?>
+
                     <h5>Site information</h5>
                     <form action="scripts/update-siteinformation.php" method="post">
                         <label for="sitetitle">Site title</label>

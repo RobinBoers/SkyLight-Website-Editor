@@ -38,7 +38,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the blogpost ".$title."</p>");
         fclose($history);
 
-        header('Location: ../blogs.php');
+        header('Location: ../blogs.php?success-deleted');
     }
 
 }

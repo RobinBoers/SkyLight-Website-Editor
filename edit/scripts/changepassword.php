@@ -13,14 +13,10 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
             fwrite($fp, $newpswd);
             fclose($fp);
 
-            header("Location: ../settings.php");
+            header("Location: ../settings.php?success-passchange");
         } else {
 
-            echo("
-            <p class='error'>
-                Wrong password.<br>
-                <a href='../index.php'>Try again</a>
-            </p>");
+            header("Location: ../settings.php?error-passchange");
 
         }
         

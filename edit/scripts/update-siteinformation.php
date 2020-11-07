@@ -22,7 +22,7 @@
         ");
         fclose($fp);
 
-        header("Location: ../index.php");
+        header("Location: ../settings.php?success-siteinfo");
     } 
     else {
 

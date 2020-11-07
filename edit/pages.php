@@ -124,6 +124,22 @@
                 </header>
 
                 <div class="w3-container">
+
+                    <!-- Popup if user enterd wrong password (password change) -->
+                    <?php if(isset($_GET['success-delete'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully deleted</b></p>'; 
+                    }?>
+
+                    <!-- Popup if user enterd wrong password (password change) -->
+                    <?php if(isset($_GET['success-post'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully published</b></p>'; 
+                    }?>
+
+                    <!-- Popup if user enterd wrong password (password change) -->
+                    <?php if(isset($_GET['success-update'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully updated</b></p>'; 
+                    }?>
+
                     <ul>
                         <?php
                             $file = "../content/pages.json";

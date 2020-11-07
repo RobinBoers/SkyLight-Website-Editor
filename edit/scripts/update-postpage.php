@@ -38,7 +38,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has added this page: ".$title."</p>");
         fclose($history);
 
-        header("Location: ../pages.php");
+        header("Location: ../pages.php?success-post");
     } 
 
     // Update a post
@@ -79,7 +79,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has updated this page: ".$title."</p>");
         fclose($history);
 
-        // header('Location: ../index.php');
+        header('Location: ../pages.php?success-update');
     } else {
         echo "Something went wrong";
     }
