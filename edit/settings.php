@@ -153,6 +153,15 @@
                     <form action="scripts/deletelogo.php" method="post">
                         <input type="submit" value="Delete" name="deletelogo"><br>
                     </form>
+                    <h5><b><i class="fa fa-archive"></i> Data</b></h5><br>
+                    <h5>Backup and download userdata</h5>
+                    <form action="scripts/backup-data.php" method="post" enctype= "multipart/form-data">
+                        <input type="submit" value="Download" name="submit"><br>
+                    </form><br>
+                    <h5>Restore userdata from backup</h5>
+                    <form action="scripts/restore-data.php" method="post">
+                        <input type="submit" value="Restore" name="submit"><br>
+                    </form>
                 </div>
                 <hr>
 
