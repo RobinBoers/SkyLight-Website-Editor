@@ -10,11 +10,11 @@ SkyLight is a flexible website builder made with html5, css3, javascript and php
 - Blogging
 - Menu's
 - Multiple default themes (more comming soon)
+- Theme selector
+- Online updating
 
 ### These features will be coming soon!
-- Theme selector
 - Multiple users
-- Updating script (so you don't have to backup everything everytime, and then import it in a new version)
 
 ## Installation
 It's quite simple: you download this the lastest release from this GitHub repository, and you copy it to your server. After that, start your server and change the default password from root to something else. All users share the same password.
@@ -26,6 +26,6 @@ I also made a wiki, where you can find tutorials about SkyLight
 
 ### Links: 
 - [Theme Library (GitHub)](https://github.com/RobinBoers/SkyLight-themelibrary)
-- [Theme Selector (comming soon)](https://robinboers.github.io/SkyLight-themelibrary/)
+- [Theme Selector](https://robinboers.github.io/SkyLight-themelibrary/)
 - [SkyLight basetheme (for theme development)](https://github.com/RobinBoers/SkyLight-basetheme)
 - [Wiki](https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/)
