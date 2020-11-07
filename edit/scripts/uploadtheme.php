@@ -37,57 +37,57 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                         if($file == "theme.css") {
 
-                            echo "found theme.css<br>";
+                            echo "> found theme.css<br>";
 
                             unlink("../../css/theme.css"); 
                             copy($path."/theme.css", "../../css/theme.css"); 
                             
 
-                            echo "replaced old theme.css<br>";
+                            echo "> replaced old theme.css<br>";
                        }
 
                        else if($file == "post.php") {
 
-                            echo "found post.php<br>";
+                            echo "> found post.php<br>";
 
                             unlink("../../post/post.php"); 
                             copy($path."/post.php", "../../post/post.php"); 
                         
 
-                            echo "replaced old post.php<br>";
+                            echo "> replaced old post.php<br>";
                          }
 
                          else if($file == "page.php") {
 
-                            echo "found page.php<br>";
+                            echo "> found page.php<br>";
 
                             unlink("../../p/page.php"); 
                             copy($path."/page.php", "../../p/page.php"); 
                         
 
-                            echo "replaced old page.php<br>";
+                            echo "> replaced old page.php<br>";
                          }
 
                          else if($file == "index.php") {
 
-                            echo "found index.php<br>";
+                            echo "> found index.php<br>";
 
                             unlink("../../index.php"); 
                             copy($path."/index.php", "../../index.php"); 
                         
 
-                            echo "replaced old index.php<br>";
+                            echo "> replaced old index.php<br>";
                          }
 
                          else if($file == "blog.php") {
 
-                            echo "found blog.php<br>";
+                            echo "> found blog.php<br>";
 
                             unlink("../../content/blog.php"); 
                             copy($path."/blog.php", "../../content/blog.php"); 
                         
 
-                            echo "replaced old blog.php<br>";
+                            echo "> replaced old blog.php<br>";
                          }
                          
                          else if ($file == "." || $file == "..") {
@@ -96,7 +96,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                          else {
 
-                             echo "copying ".$file;
+                             echo " > copying ".$file;
                              copy($path."/".$file, "../../content/uploads/".$file); 
 
                          }
@@ -108,6 +108,8 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
                     
                     // // remove extract dir
                     // rmdir($path . $name);  
+
+                    header("Location: ../themes.php?success");
 
                 }  
             }  

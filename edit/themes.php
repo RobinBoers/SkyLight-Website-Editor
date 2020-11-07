@@ -122,6 +122,12 @@
                 </header>
 
                 <div class="w3-container">
+
+                    <!-- Popup if install was successfull -->
+                    <?php if(isset($_GET['success'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Theme successfully installed.</b></p>'; 
+                    }?>
+                    
                     <p>Theme support is finally here!</p>
                     <p>
                         To activate a theme, download one of the ones I made, or find third-party ones,<br>
