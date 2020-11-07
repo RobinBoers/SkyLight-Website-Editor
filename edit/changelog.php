@@ -126,9 +126,11 @@
                     <!-- Changelog from github -->
                     <h3>What's new?</h3>
                     <p>
+                        <b>v0.03-beta</b> This release of SkyLight introduces the online updater,<br>which can check for updates and install them at a click of a button.<br>
+                        I also finally implemented the theme library.<br>And there's now an easy way to backup userdata.<br><hr>
                         <b>v0.02.1-beta</b> This patch fixes the bug that could cause code-injection, <br>
                         and passwords are now hashed, and not stored as plain text.<br><hr>
-                        <b>v0.02-beta</b> Almost a month ago, I released the first beta of SkyLight Website Builder! I worked a lot on it since then and added these features:<br>
+                        <b>v0.02-beta</b> Almost a month ago, I released the first beta of SkyLight Website Builder!<br>I worked a lot on it since then and added these features:<br>
                         - Theme support<br>
                         - Second default theme<br>
                         - Menu support<br>
@@ -144,7 +146,7 @@
                         - custom themes<br>
                         - custom logos (if you're theme supports it)<br>
                         Theme library is coming soon!<br>
-                        Use on own risk!<br>
+                        Use on own risk!<br><hr>
 
 
 
