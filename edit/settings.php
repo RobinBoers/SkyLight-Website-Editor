@@ -124,9 +124,19 @@
 
                 <div class="w3-container">
 
-                    <!-- Popup if install was successfull -->
+                    <!-- Popup if restore was successfull -->
                     <?php if(isset($_GET['success-restore'])) { 
                         echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Userdata successfully restored.</b></p>'; 
+                    }?>
+
+                    <!-- Popup if logo upload was successfull -->
+                     <?php if(isset($_GET['success-logo-upload'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Logo successfully uploaded.</b></p>'; 
+                    }?>
+
+                    <!-- Popup if logo deletion was successfull -->
+                    <?php if(isset($_GET['success-logo-delete'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Logo successfully deleted.</b></p>'; 
                     }?>
 
                     <h5>Site information</h5>

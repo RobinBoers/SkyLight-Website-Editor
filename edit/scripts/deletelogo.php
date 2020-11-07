@@ -8,14 +8,14 @@ fwrite($fp, " ");
 fclose($fp);
 
 // delete the file
-unlink('../../images/uploads/logo.jpg');
+unlink('../../images/logo.jpg');
 
 // Add to history log
 $history = fopen("../../content/history.html", 'a');
 fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the logo</p>");
 fclose($history);
 
-header("Location: ../index.php");
+header("Location: ../settings.php?success-logo-delete");
 
 }
 else {

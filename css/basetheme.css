@@ -9,7 +9,7 @@
 
 /* Background */
 body {
-  background: url("/images/uploads/background.png") no-repeat center center fixed;
+  background: url("/images/background.png") no-repeat center center fixed;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;

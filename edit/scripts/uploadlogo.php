@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
     $newFileName = "logo.jpg";
-    $target_dir = "../../images/uploads/";
+    $target_dir = "../../images/";
     $target_file = $target_dir . $newFileName;
     $uploadOk = 1;
     $logo = false;
@@ -45,16 +45,18 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
 
             // Show success message
-            echo "<br>Het bestand ". basename( $_FILES["fileToUpload"]["name"]). " is geupload<br><a href='../settings.php'>Back</a><br>";
+            // echo "<br>Het bestand ". basename( $_FILES["fileToUpload"]["name"]). " is geupload<br><a href='../settings.php'>Back</a><br>";
 
             $fp = fopen("../../content/logo.php", 'w+');
-            fwrite($fp, "<img src='/images/uploads/logo.jpg' class='logo'>");
+            fwrite($fp, "<img src='/images/logo.jpg' class='logo'>");
             fclose($fp);
 
             // Add to history log
             $history = fopen("../../content/history.html", 'a');
             fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has uploaded a new logo</p>");
             fclose($history);
+
+            header("Location: ../settings.php?success-logo-upload");
 
         } 
         
