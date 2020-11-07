@@ -145,7 +145,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
                     // remove extract dir
                     deleteDirectory($path);
 
-                    // header("Location: ../settings.php?success-restore");
+                    header("Location: ../settings.php?success-restore");
 
                 }  
             }  
