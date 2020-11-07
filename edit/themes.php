@@ -130,11 +130,9 @@
                     
                     <p>Theme support is finally here!</p>
                     <p>
-                        To activate a theme, download one of the ones I made, or find third-party ones,<br>
-                        and import the ZiP files with the downloadbutton below.
+                        To activate a theme, download one of the ones below or find third-party ones,<br>
+                        and import the ZiP files with the uploadbutton below.
                     </p>
-
-                    <h5>Import</h5>
 
                     <form method="post" action="scripts/uploadtheme.php" enctype="multipart/form-data">
 
@@ -143,8 +141,6 @@
                         <input type="submit" name="submit" value="Upload">  
 
                     </form> 
-
-                    <h5>Theme selector</h5>
                     <iframe src="https://robinboers.github.io/SkyLight-themelibrary/" width="100%" height="500px" style="border:0px solid white;" title="Theme Library"></iframe> 
                 </div>
                 
