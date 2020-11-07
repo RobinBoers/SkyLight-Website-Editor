@@ -1,7 +1,6 @@
 /* 
     editor.css - SkyLight Website Builder
     Made by Robin Boers
-
     This stylesheet only works in the editor
 */
 .main {
@@ -88,4 +87,8 @@ html, body, :root {
 
 .w3-sidebar {
     height:100%;
+}
+
+a:hover {
+    text-decoration: none !important;
 }

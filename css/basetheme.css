@@ -1,7 +1,6 @@
 /* 
     basetheme.css - SkyLight Website Builder
     Made by Robin Boers
-
     Stylesheet from old version of SkyLight (pre-Github)
     I'm slowly transfering stylerules to main.css
     This stylesheet will be used for posistioning when themes engine is finished
@@ -198,11 +197,6 @@ input[type="text" i], input[type="tel" i], input[type="email" i], input[type="pa
 /* Remove outline */
 :focus, input[type="file" i]::-webkit-file-upload-button, input, button {
     outline:none !important;
-}
-
-/* No border on the login screen */
- .inlogveld {
-     border-color: transparent !important;
 }
 
 
