@@ -1,4 +1,8 @@
 # SkyLight Website Builder/Editor
+
+[![GitHub release](https://img.shields.io/github/tag/RobinBoers/SkyLight-Website-Editor.svg?style=flat)](https://github.com/RobinBoers/SkyLight-Website-Editor/releases/)
+[![GitHub stars](https://img.shields.io/github/stars/RobinBoers/SkyLight-Website-Editor.svg?style=social&label=Star&maxAge=2592000)](https://github.com/RobinBoers/SkyLight-Website-Editor/stargazers/)
+
 SkyLight is a flexible website builder made with html5, css3, javascript and php. It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
 
 ## Features
