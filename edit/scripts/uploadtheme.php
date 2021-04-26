@@ -14,8 +14,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
             // create variables
             $file_name = $_FILES['zip_file']['name'];  
             $array = explode(".", $file_name);  
-            $name = $array[0];  
-            $ext = $array[1];  
+            $ext = end($array);  
 
             // check if the file is a zipfile
             if($ext == 'zip')  {  
@@ -115,9 +114,15 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
                     header("Location: ../themes.php?success");
 
                 }  
-            }  
-        }  
-    }  
+            }  else {
+                echo "not a zip";
+            }
+        }  else {
+            echo "zip empty";
+        }
+    }  else {
+        echo "didnt receive input";
+    }
 }
 else {
 
