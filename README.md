@@ -22,7 +22,12 @@ SkyLight is a flexible website builder made with html5, css3, javascript and php
 - Multiple users
 
 ## Installation
-It's quite simple: you download this the lastest release from this GitHub repository, and you copy it to your server. After that, start your server and change the default password from root to something else. All users share the same password.
+Download the latest version from the releases page on this GitHub repo, and extract the zip file on the root of your server.  
+If you want to try the latest stuff git clone from the master branch:
+
+```git clone https://github.com/RobinBoers/SkyLight-Website-Editor```  
+
+The default password is `root`
 
 ## For help or suggestions
 If you need help or have any suggestions, you can email me at robin@geheimesite.nl  
