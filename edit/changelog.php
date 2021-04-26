@@ -126,6 +126,7 @@
                     <!-- Changelog from github -->
                     <h3>What's new?</h3>
                     <p>
+                        <b>v0.03.1-beta</b> This patch fixes some grammar mistakes in the UI and reorganizes the settings panel.<br>I also added an option to add custom CSS styling trought the settings panel.<br>It is recommended to download the optional CSS updates from the settings panel to prevent visual bugs in the editor.<hr>
                         <b>v0.03-beta</b> This release of SkyLight introduces the online updater,<br>which can check for updates and install them at a click of a button.<br>
                         I also finally implemented the theme library.<br>And there's now an easy way to backup userdata.<br><hr>
                         <b>v0.02.1-beta</b> This patch fixes the bug that could cause code-injection, <br>

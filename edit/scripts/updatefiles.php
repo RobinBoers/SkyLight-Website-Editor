@@ -6,8 +6,8 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
     if(isset($_GET['css'])) {
 
         // Initialize a file URL to the variable 
-        $basetheme_uri = 'https://code.geheimesite.nl/package/SkyLight/latest/basetheme.css'; 
-        $editor_uri = 'https://code.geheimesite.nl/package/SkyLight/latest/editor.css'; 
+        $basetheme_uri = 'https://raw.githubusercontent.com/RobinBoers/SkyLight-Website-Editor/master/css/basetheme.css'; 
+        $editor_uri = 'https://raw.githubusercontent.com/RobinBoers/SkyLight-Website-Editor/master/css/editor.css'; 
 
         // Set destination 
         $basetheme_dest = '../../css/basetheme.css'; 

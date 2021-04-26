@@ -149,6 +149,16 @@
                             <a href="changelog.php">View changelog</a>
                         </p>
 
+                    <?php } elseif(strpos($currentversion, 'modded') !== false) { ?>
+
+                        <p class="w3-text-red">
+                            Modded versions of SkyLight are not supported and will not receive updates<br>trough the online updater. <a target="_blank" href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/Why-wont-the-online-updates-work-with-custom-version-strings%3F">Why?</a>
+                        </p>
+
+                        <p>
+                            <b>Version:</b> <?php echo $currentversion; ?>
+                        </p>
+
                     <?php } elseif($currentversion === $latestversion) { ?>
 
                         <p>
@@ -163,7 +173,7 @@
 
                         <p class="w3-text-red">
                             You are not running the latest version of SkyLight.<br>
-                            Update to the new version for security patches and the newest features!<br>
+                            Update to the latest version for security patches and the newest features!<br>
                             <a href="https://code.geheimesite.nl/package/SkyLight/latest/changelog.html">Learn more...</a>
                         </p>
                         <p>

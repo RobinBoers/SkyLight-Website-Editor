@@ -175,28 +175,32 @@
                     </form>
                     <hr>
                     <h5><b><i class="fa fa-image"></i> Logo</b></h5><br>
-                    <h5>Upload new logo</h5>
                     <form action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data">
                         <input required type="file" name="fileToUpload" id="fileToUpload">
-                        <input type="submit" value="Upload" name="submit"><br>
+                        <input type="submit" value="Upload new logo" name="submit"><br>
                     </form><br>
-                    <h5>Delete logo</h5>
                     <form action="scripts/deletelogo.php" method="post">
-                        <input type="submit" value="Delete" name="deletelogo"><br>
+                        <input type="submit" value="Delete logo" name="deletelogo"><br>
                     </form>
+                    <hr>
                     <h5><b><i class="fa fa-archive"></i> Data</b></h5><br>
-                    <h5>Backup and download userdata</h5>
                     <form action="scripts/backup-data.php" method="post" enctype= "multipart/form-data">
-                        <input type="submit" value="Download" name="submit"><br>
+                        <input type="submit" value="Backup userdata" name="submit"><br>
                     </form><br>
-                    <h5>Restore userdata from backup</h5>
                     <form action="scripts/restore-data.php"  enctype="multipart/form-data" method="post">
                         <input type="file" name="zip_file">
-                        <input type="submit" value="Restore" name="submit"><br>
+                        <input type="submit" value="Restore userdata" name="submit"><br>
                     </form>
-                    <h5>Update optional files</h5>
+                    <hr>
+                    <h5><b><i class="fa fa-paint-brush"></i> Custom CSS Styling</b></h5><br>
+                    <form action="scripts/custom-css.php" method="post" enctype= "multipart/form-data">
+                        <textarea name="styles"></textarea><br>
+                        <input type="submit" value="OK" name="submit"><br>
+                    </form>
+                    <hr>
+                    <h5><b><i class="fa fa-download"></i> Optional updates</b></h5><br>
                     <p>
-                        <a href="scripts/updatefiles.php?css">Update css files</a>
+                        <a href="scripts/updatefiles.php?css">Update optional css files</a>
                     </p>
                 </div>
                 <hr>

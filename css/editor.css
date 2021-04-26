@@ -92,3 +92,7 @@ html, body, :root {
 a:hover {
     text-decoration: none !important;
 }
+
+textarea {
+    border-style: solid;
+}
