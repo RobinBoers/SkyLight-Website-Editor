@@ -154,6 +154,11 @@
                         echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Site Inforamtion updated successfully.</b></p>'; 
                     }?>
 
+                    <!-- Popup if custom css was successfull -->
+                    <?php if(isset($_GET['success-css'])) { 
+                        echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Custom CSS Styling successfully updated.</b></p>'; 
+                    }?>
+
                     <h5>Site information</h5>
                     <form action="scripts/update-siteinformation.php" method="post">
                         <label for="sitetitle">Site title</label>
@@ -194,7 +199,7 @@
                     <hr>
                     <h5><b><i class="fa fa-paint-brush"></i> Custom CSS Styling</b></h5><br>
                     <form action="scripts/custom-css.php" method="post" enctype= "multipart/form-data">
-                        <textarea name="styles"></textarea><br>
+                        <textarea name="css"><?php if(file_get_contents('../css/custom.css')) {echo file_get_contents('../css/custom.css');} ?></textarea><br>
                         <input type="submit" value="OK" name="submit"><br>
                     </form>
                     <hr>
