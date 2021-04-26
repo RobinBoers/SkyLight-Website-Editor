@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../css/basetheme.css" rel="stylesheet" type="text/css">
     <link href="../css/theme.css" rel="stylesheet" type="text/css">
+    <link href="../css/custom.css" rel="stylesheet">
     <?php 
         include "../content/siteinformation.php";
     ?>
