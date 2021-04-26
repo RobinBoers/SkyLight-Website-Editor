@@ -1,1 +1,1 @@
-v0.03.1-preview
+v0.03.2-preview
