@@ -1,17 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/basetheme.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-    <link href="../css/editor.css" rel="stylesheet" type="text/css">
-    <title>Dashboard - SkyLight Website Editor</title>
+    <?php
+        include "components/head.php";
+    ?>
 </head>
 <body>
     <?php
@@ -70,7 +62,7 @@
                     <footer class="login-footer">
 
                         <center>
-                            <p>Made by <a href="https://github.com/RobinBoers" title="Github pagina van Robin Boers">Robin Boers</a></p>    
+                            <p>Made by <a href="https://github.com/RobinBoers" >Robin Boers</a></p>    
                         </center>
 
                     </footer>
@@ -82,10 +74,17 @@
         else {
             // Show dashboard (Thanks to W3.CSS for the template)
             ?>
-                <button class="w3-hide-large w3-right w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+                <button class="w3-hide-large w3-left w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
                 <nav class="w3-sidebar w3-collapse w3-light-grey" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
+
+                <div class="w3-bar-block editor-nav w3-hide-large">
+                    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+                </div>
+
+                <hr class="w3-hide-large">
+                
                 <div class="w3-container w3-row">
                     <div class="w3-col s4">
                     <img src="https://www.geheimesite.nl/images/nindo/profiel.png" class="w3-circle w3-margin-right" style="width:46px">
@@ -101,7 +100,6 @@
                     <h5>Dashboard</h5>
                 </div>
                 <div class="w3-bar-block editor-nav">
-                    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
                     <a href="index.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-users fa-fw"></i>  Overview</a>
                     <a href="pages.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-clone"></i> Pages</a>
                     <a href="blogs.php" class="w3-bar-item w3-button w3-padding"><i class="fa fa-edit"></i>  Blog</a>
@@ -171,53 +169,8 @@
                 <!-- End page content -->
                 </div>
 
-                <script>
-                // Get the Sidebar
-                var mySidebar = document.getElementById("mySidebar");
-
-                // Get the DIV with overlay effect
-                var overlayBg = document.getElementById("myOverlay");
-
-                // Toggle between showing and hiding the sidebar, and add overlay effect
-                function w3_open() {
-                if (mySidebar.style.display === 'block') {
-                    mySidebar.style.display = 'none';
-                    overlayBg.style.display = "none";
-                } else {
-                    mySidebar.style.display = 'block';
-                    overlayBg.style.display = "block";
-                }
-                }
-
-                // Close the sidebar with the close button
-                function w3_close() {
-                mySidebar.style.display = "none";
-                overlayBg.style.display = "none";
-                }
-                </script>
-                <!-- Initialize Quill editor -->
-                <script>
-
-                    var quill = new Quill('#editor', {
-                        modules: {
-                            toolbar: [
-                            [{ header: [1, 2, false] }],
-                            ['bold', 'italic', 'underline'],
-                            ['image', 'blockquote', 'link'],
-                            ['code-block'],
-                            [{ list: 'ordered' }, { list: 'bullet' }]
-                            ]
-                        },
-                        placeholder: 'Add new text to update blogpost',
-                        theme: 'snow'  // or 'bubble'
-                    });
-                    
-                    function submit() {
-                        document.querySelector("#content").value = document.querySelector(".ql-editor").innerHTML;
-
-                        document.querySelector(".form").submit();
-                    }
-                </script>
+                <script src="components/sidebar.js"></script>
+                <script src="components/quill.js"></script>
             <?php
         }
     ?>

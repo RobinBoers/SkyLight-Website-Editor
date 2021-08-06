@@ -70,7 +70,7 @@
                     <footer class="login-footer">
 
                         <center>
-                            <p>Made by <a href="https://github.com/RobinBoers" title="Github pagina van Robin Boers">Robin Boers</a></p>    
+                            <p>Made by <a href="https://github.com/RobinBoers" >Robin Boers</a></p>    
                         </center>
 
                     </footer>
@@ -82,7 +82,7 @@
         else {
             // Show dashboard (Thanks to W3.CSS for the template)
             ?>
-                <button class="w3-hide-large w3-right w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+                <button class="w3-hide-large w3-left w3-hover-none" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
                 
                 <!-- Sidebar/menu -->
                 <nav class="w3-sidebar w3-collapse w3-light-grey" style="z-index:3;width:300px;" id="mySidebar"><br> <!-- w3-animate-left -->
@@ -177,30 +177,7 @@
                 <!-- End page content -->
                 </div>
 
-                <script>
-                // Get the Sidebar
-                var mySidebar = document.getElementById("mySidebar");
-
-                // Get the DIV with overlay effect
-                var overlayBg = document.getElementById("myOverlay");
-
-                // Toggle between showing and hiding the sidebar, and add overlay effect
-                function w3_open() {
-                if (mySidebar.style.display === 'block') {
-                    mySidebar.style.display = 'none';
-                    overlayBg.style.display = "none";
-                } else {
-                    mySidebar.style.display = 'block';
-                    overlayBg.style.display = "block";
-                }
-                }
-
-                // Close the sidebar with the close button
-                function w3_close() {
-                mySidebar.style.display = "none";
-                overlayBg.style.display = "none";
-                }
-                </script>
+                <script src="components/sidebar.js"></script>
             <?php
         }
     ?>

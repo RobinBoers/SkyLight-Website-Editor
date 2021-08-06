@@ -5,6 +5,7 @@
 
 SkyLight is a flexible website builder made with html5, css3, javascript and php. It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
 
+NOTE: SkyLight is written for PHP 7. It will not work in PHP 8. I found that out the hard way when I was debugging some bugs that appeared out of nowhere because I accedentaly updated XAMPP.
 ## Features
 - Simple dashboard
 - Custom logos

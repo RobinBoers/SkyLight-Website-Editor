@@ -1,0 +1,47 @@
+[
+    {
+        "filename": "index.php",
+        "icon": "fa fa-users fa-fw",
+        "name": "Dashboard"
+    },
+    {
+        "filename": "pages.php",
+        "icon": "fa fa-clone",
+        "name": "Pages"
+    },
+    {
+        "filename": "blogs.php",
+        "icon": "fa fa-edit",
+        "name": "Blog"
+    },
+    {
+        "filename": "history.php",
+        "icon": "fa fa-history fa-fw",
+        "name": "History"
+    },
+    {
+        "filename": "themes.php",
+        "icon": "fa fa-paint-brush",
+        "name": "Themes"
+    },
+    {
+        "filename": "settings.php",
+        "icon": "fa fa-cog fa-fw",
+        "name": "Settings"
+    },
+    {
+        "filename": "about.php",
+        "icon": "fa fa-info-circle fa-fw",
+        "name": "About"
+    },
+    {
+        "filename": "changelog.php",
+        "icon": "fa fa-info-circle fa-fw",
+        "name": "About"
+    },
+    {
+        "filename": "update/index.php",
+        "icon": "fas fa-cogs",
+        "name": "Update"
+    }
+]

@@ -1,6 +1,6 @@
 
         <?php
-        $sitetitle = 'Your title here';
+        $sitetitle = 'My Sire!';
         $footertext = 'Add footertext';
         ?>
         

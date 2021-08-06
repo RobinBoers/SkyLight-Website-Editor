@@ -13,16 +13,11 @@ body {
 
 :root {
     --color-one:#35df9c;
-/*                --color-two:#1ebf7f;*/
+/*  --color-two: #1ebf7f; */
 }
 
 input, button, input[type="file" i]::-webkit-file-upload-button:hover {
     transition: none !important;
-}
-
-input[type="button" i]:hover, input[type="submit" i]:hover, input[type="reset" i]:hover, button:hover {
-    border-left-width: 3px  !important;
-    border-left-color: var(--color-one) !important;
 }
 
 a {
