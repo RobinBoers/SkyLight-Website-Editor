@@ -108,3 +108,18 @@ label {
     display: block;
     margin: 10px;
 }
+
+.inline-form,
+.inline-form * {
+    display: inline;
+}
+
+.settings hr {
+    margin-top: 40px !important;
+    margin-bottom: 40px !important;
+}
+
+.settings,
+.settings h5 {
+    margin: 10px 0px 25px !important;
+}
