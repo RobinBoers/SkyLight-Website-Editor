@@ -24,6 +24,8 @@
         <p>By <?php echo $auteur; ?></p>
         <div class="postcontent"><?php echo $content; ?></div>
         <a href="<?php echo $taglink; ?>"><?php echo $tags; ?></a>
+        <h3>Comments</h3>
+        <?php include "../content/comments.php"; ?>
         <h2>More posts</h2>
         <?php include "../content/blog.php"; ?>
     </main>

@@ -91,6 +91,17 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                             echo "> replaced old blog.php<br>";
                          }
+
+                         else if($file == "comments.php") {
+
+                            echo "> found comments.php<br>";
+
+                            unlink("../../content/comments.php"); 
+                            copy($path."/comments.php", "../../content/comments.php"); 
+                        
+
+                            echo "> replaced old comments.php<br>";
+                         }
                          
                          else if ($file == "." || $file == "..") {
 
