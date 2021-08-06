@@ -15,12 +15,17 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
         if(file_put_contents($basetheme_dest,file_get_contents($basetheme_uri))) { 
             echo "Downloaded basetheme.css<br>";
-        }
-        if(file_put_contents($editor_dest,file_get_contents($editor_uri))) { 
-            echo "Downloaded editor.css<br>";
-        }
 
-        header("Location: ../update.php?success-updatecss");
+            if(file_put_contents($editor_dest,file_get_contents($editor_uri))) { 
+                echo "Downloaded editor.css<br>";
+
+                header("Location: ../update.php?success-updatecss");
+            } else {
+                echo "Something went wrong while trying to download CSS files.";
+            }
+        } else {
+            echo "Something went wrong while trying to download CSS files.";
+        }
 
     } else {
         echo "Something went wrong";
