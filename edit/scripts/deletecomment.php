@@ -17,7 +17,7 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
         // Overwrite array with new post
         foreach ($oldcomments as $comment){
-            if($comment->id === (int)$id) {
+            if($comment->id === $id) {
                 // do nothing, so it won't go into the new file
                 $text = $comment->body;
             }
