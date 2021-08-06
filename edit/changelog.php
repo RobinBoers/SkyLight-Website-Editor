@@ -41,7 +41,7 @@
                 - blogging<br>
                 - static pages<br>
                 - custom themes<br>
-                - custom logos (if you're theme supports it)<br>
+                - custom logos (if your theme supports it)<br>
                 Theme library is coming soon!<br>
                 Use on own risk!<br><hr>
         </div>
