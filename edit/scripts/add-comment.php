@@ -1,8 +1,8 @@
 <?php
 
     // Get data from editor
-    $name = $_POST['name'];
-    $body = $_POST['text'];
+    $name = strip_tags($_POST['name']);
+    $body = strip_tags($_POST['text']);
     $post_id = $_POST['post_id'];
     $id = uniqid();
 
