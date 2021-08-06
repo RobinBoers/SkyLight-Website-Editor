@@ -48,6 +48,16 @@
                 <h4>Pages</h4>
                 </div>
             </div>
+            <div class="w3-quarter">
+                <div class="w3-container w3-deep-orange w3-padding-16">
+                <div class="w3-left"><i class="fas fa-comments w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                    <h3><?php include "analytics/countcomments.php"; ?></h3>
+                </div>
+                <div class="w3-clear"></div>
+                <h4>Comments</h4>
+                </div>
+            </div>
         </div>
 
         <hr>
@@ -58,7 +68,7 @@
             <hr>
             <h5>Need help?</h5>
             <p>If you need help setting up SkyLight, installing themes and configuring stuff, check out the wiki.<br>
-            It's located at the <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki">GitHub repo</a>. If you have any other questions, feel free to email me at <a href="mailto:robin@geheimesite.nl">robin@geheimesite.nl</a>
+            It's located at the <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki">GitHub repo</a>. If you have any other questions, feel free to email me at <a href="mailto:robin@geheimesite.nl">robin@geheimesite.nl</a> or add an issue over on Github.
             </p>
         </div>
         <hr>
