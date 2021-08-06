@@ -32,7 +32,6 @@
 
         <div class="w3-container">
 
-            <ul>
                 <?php
                     $file = "../content/comments.json";
 
@@ -49,7 +48,7 @@
                             $commentsExist = true;
                             
                             ?>
-                                <li>
+                                <div class="w3-container">
                                     <a class="w3-right" href="scripts/deletecomment.php?id=<?php echo $comment->id; ?>">
                                         Delete
                                     </a>
@@ -60,19 +59,13 @@
                                     <span>
                                         <?php echo $comment->body; ?>
                                     </span>
-                                </li>
+                                </div>
+                                <hr>
                             <?php
                         }
                     }
                 ?>
-            </ul>
         </div>
-
-        <!-- Only display last <hr> if there are posts.
-                Othersise it would look weird -->
-        <?php if($commentsExist === true) {
-            ?><hr><?php
-        } ?>
 
     <!-- End page content -->
     </div>

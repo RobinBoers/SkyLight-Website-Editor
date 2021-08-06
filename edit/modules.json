@@ -24,6 +24,12 @@
         "in_menu": true
     },
     {
+        "filename": "newcomment.php",
+        "icon": "fas fa-comments",
+        "name": "New comment",
+        "in_menu": false
+    },
+    {
         "filename": "history.php",
         "icon": "fa fa-history fa-fw",
         "name": "History",

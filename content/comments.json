@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id": 1,
+        "body": "This is an example comment. Hello world!",
+        "post_id": "test",
+        "name": "Robin"
+    }
+]

@@ -22,7 +22,7 @@ if(file_exists($file) && filesize($file) > 0){
                 <div class="clearfix blogtext postcontent">
                     <?php
                         $text = $blog->text;
-                        $text = substr($text, 0, 340);
+                        $text = substr($text, 0, 500);
                         $text = substr($text, 0, strrpos($text, ' ')) . " ..."; 
                         echo(nl2br($text))
                     ?>

@@ -1,6 +1,6 @@
 
         <?php
-        $sitetitle = 'Your title here';
-        $footertext = 'Add footertext';
+        $sitetitle = 'My website';
+        $footertext = 'Copyright Me 2021';
         ?>
         

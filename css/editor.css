@@ -103,3 +103,8 @@ a:hover {
 textarea {
     border-style: solid;
 }
+
+label {
+    display: block;
+    margin: 10px;
+}
