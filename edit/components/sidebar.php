@@ -34,28 +34,33 @@
     </div>
 
     <div class="w3-bar-block editor-nav">
-        
-        <a href="index.php" class="w3-bar-item w3-button w3-padding w3-blue">
-            <i class="fa fa-users fa-fw"></i>  Overview
-        </a>
-        <a href="pages.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fa fa-clone"></i> Pages
-        </a>
-        <a href="blogs.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fa fa-edit"></i>  Blog
-        </a>
-        <a href="history.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fa fa-history fa-fw"></i>  History
-        </a>
-        <a href="themes.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fa fa-paint-brush"></i>  Themes
-        </a>
-        <a href="settings.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fa fa-cog fa-fw"></i>  Settings
-        </a>
-        <a href="about.php" class="w3-bar-item w3-button w3-padding">
-            <i class="fas fa-info-circle fa-fw"></i>  About
-        </a>
+
+        <?php
+            require "functions/get-modules.php";
+            $modules = get_modules();
+
+            foreach ($modules as $module){
+                if($module->in_menu === true) {
+                     if($module->filename === $pagename) { 
+
+                        ?>
+                            <a href="#" class="w3-bar-item w3-button w3-padding w3-blue">
+                                <i class="<?php echo $module->icon; ?>"></i>  <?php echo $module->name; ?>
+                            </a>
+                        <?php
+
+                    } else {
+
+                        ?>
+                            <a href="<?php echo $module->filename; ?>" class="w3-bar-item w3-button w3-padding">
+                                <i class="<?php echo $module->icon; ?>"></i>  <?php echo $module->name; ?>
+                            </a>
+                        <?php
+
+                    }
+                }    
+            }
+        ?>
         
         <br><br>
 

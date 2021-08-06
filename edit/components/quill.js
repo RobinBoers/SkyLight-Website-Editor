@@ -1,17 +1,11 @@
 // Initialize Quill editor
 
-var quill = new Quill('#editor', {
+var quill = new Quill("#editor", {
     modules: {
-        toolbar: [
-        [{ header: [1, 2, false] }],
-        ['bold', 'italic', 'underline'],
-        ['image', 'blockquote', 'link'],
-        ['code-block'],
-        [{ list: 'ordered' }, { list: 'bullet' }]
-        ]
+        toolbar: [[{ header: [1, 2, false] }], ["bold", "italic", "underline"], ["image", "blockquote", "link"], ["code-block"], [{ list: "ordered" }, { list: "bullet" }]],
     },
-    placeholder: 'Add new text to update blogpost',
-    theme: 'snow'  // or 'bubble'
+    placeholder: "Start typing to add content...",
+    theme: "snow", // or 'bubble'
 });
 
 function submit() {

@@ -12,7 +12,7 @@
             $link = $page->link;
             $id = $page->id;
         } else {
-            // echo "Er werkt iets niet...";
+            // echo "Something went wrong...";
         }
     } 
 

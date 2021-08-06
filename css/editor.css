@@ -12,11 +12,13 @@ body {
 }
 
 :root {
-    --color-one:#35df9c;
-/*  --color-two: #1ebf7f; */
+    --color-one: #35df9c;
+    /*  --color-two: #1ebf7f; */
 }
 
-input, button, input[type="file" i]::-webkit-file-upload-button:hover {
+input,
+button,
+input[type="file" i]::-webkit-file-upload-button:hover {
     transition: none !important;
 }
 
@@ -32,18 +34,22 @@ a {
 }
 */
 
-/* main {
-margin-top: 7px !important;
-} */
+.module-content {
+    margin-left: 300px;
+}
+
+.module-header {
+    padding-top: 22px;
+}
 
 .active {
-background-color: #4CAF50;
+    background-color: #4caf50;
 }
 
 .login-main {
     width: 80%;
     margin: auto;
-    height:100%;
+    height: 100%;
 }
 
 .login-main-inner {
@@ -60,28 +66,34 @@ background-color: #4CAF50;
 
 .login-form-inner {
     background-color: rgb(250, 250, 250);
-    border:1px solid grey;
-    padding:20px;
-    border-radius:10px;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 10px;
 }
 
 .login-header {
-    flex:1;
+    flex: 1;
 }
 
 .login-footer {
-  flex: none; /* 2 */
+    flex: none; /* 2 */
 }
 
-html, body, :root {
-    height:100% !important;
+html,
+body,
+:root {
+    height: 100% !important;
 }
 
-.w3-button:hover {text-decoration: none !important;}
-.editor-nav a:hover {text-decoration: none !important;}
+.w3-button:hover {
+    text-decoration: none !important;
+}
+.editor-nav a:hover {
+    text-decoration: none !important;
+}
 
 .w3-sidebar {
-    height:100%;
+    height: 100%;
 }
 
 a:hover {

@@ -2,46 +2,79 @@
     {
         "filename": "index.php",
         "icon": "fa fa-users fa-fw",
-        "name": "Dashboard"
+        "name": "Dashboard",
+        "in_menu": true
     },
     {
         "filename": "pages.php",
         "icon": "fa fa-clone",
-        "name": "Pages"
+        "name": "Pages",
+        "in_menu": true
     },
     {
         "filename": "blogs.php",
         "icon": "fa fa-edit",
-        "name": "Blog"
+        "name": "Blog",
+        "in_menu": true
     },
     {
         "filename": "history.php",
         "icon": "fa fa-history fa-fw",
-        "name": "History"
+        "name": "History",
+        "in_menu": true
     },
     {
         "filename": "themes.php",
         "icon": "fa fa-paint-brush",
-        "name": "Themes"
+        "name": "Themes",
+        "in_menu": true
     },
     {
         "filename": "settings.php",
         "icon": "fa fa-cog fa-fw",
-        "name": "Settings"
+        "name": "Settings",
+        "in_menu": true
     },
     {
         "filename": "about.php",
         "icon": "fa fa-info-circle fa-fw",
-        "name": "About"
+        "name": "About",
+        "in_menu": true
     },
     {
         "filename": "changelog.php",
         "icon": "fa fa-info-circle fa-fw",
-        "name": "About"
+        "name": "About",
+        "in_menu": false
     },
     {
-        "filename": "update/index.php",
+        "filename": "update.php",
         "icon": "fas fa-cogs",
-        "name": "Update"
+        "name": "Update",
+        "in_menu": false
+    },
+    {
+        "filename": "newpage.php",
+        "icon": "fas fa-edit",
+        "name": "New page",
+        "in_menu": false
+    },
+    {
+        "filename": "newpost.php",
+        "icon": "fas fa-edit",
+        "name": "New post",
+        "in_menu": false
+    },
+    {
+        "filename": "updatepage.php",
+        "icon": "fas fa-edit",
+        "name": "Update page",
+        "in_menu": false
+    },
+    {
+        "filename": "updatepost.php",
+        "icon": "fas fa-edit",
+        "name": "Update post",
+        "in_menu": false
     }
 ]

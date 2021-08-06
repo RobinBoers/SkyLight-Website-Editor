@@ -1,5 +1,5 @@
 
-    <?php
-    $views = 6;
-    ?>
-    
+        <?php
+        $views = 0;
+        ?>
+        

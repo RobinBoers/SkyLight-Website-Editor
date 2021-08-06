@@ -16,7 +16,7 @@
             $link = $blog->link;
             $id = $blog->id;
         } else {
-            // echo "Er werkt iets niet...";
+            // echo "Something went wrong...";
         }
     } 
 
