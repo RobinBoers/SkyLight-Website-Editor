@@ -51,7 +51,7 @@
 
             <br>
 
-            <button onclick="submit()">Update</button>
+            <button onclick="submit_update()">Update</button>
 
         </div>
         <hr>

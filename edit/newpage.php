@@ -34,7 +34,7 @@
 
             <br>
 
-            <button onclick="submit()">Publish</button>
+            <button onclick="submit_newpage()">Publish</button>
 
         </div>
         <hr>

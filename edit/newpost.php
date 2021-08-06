@@ -35,7 +35,7 @@
 
             <br>
 
-            <button onclick="submit()">Post</button>
+            <button onclick="submit_newpost()">Post</button>
 
         </div>
         <hr>

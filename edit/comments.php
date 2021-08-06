@@ -15,18 +15,15 @@
 
     <div class="w3-main module-content">
 
-        <!-- Popup for success messages -->
-        <?php 
-            if(isset($_GET['success-delete'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Post successfully deleted</b></p>'; 
-            } elseif(isset($_GET['success-post'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Post successfully published</b></p>'; 
-            } elseif(isset($_GET['success-update'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Post successfully updated</b></p>'; 
-            }
-        ?>
 
         <?php include "components/module-header.php"?>
+
+        <!-- Popup for success messages -->
+        <?php 
+            if(isset($_GET['success-deleted'])) { 
+                echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Comment successfully deleted</b></p>'; 
+            }
+        ?>
 
         <hr>
 

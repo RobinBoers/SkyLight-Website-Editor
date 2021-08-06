@@ -15,20 +15,20 @@
 
     <div class="w3-main module-content">
 
-        <!-- Popup for success messages -->
-        <?php 
-            if(isset($_GET['success-delete'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully deleted</b></p>'; 
-            } elseif(isset($_GET['success-post'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully published</b></p>'; 
-            } elseif(isset($_GET['success-update'])) { 
-                echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Page successfully updated</b></p>'; 
-            }
-        ?>
-
         <?php include "components/module-header.php"?>
 
         <button class="w3-right" onclick="window.location = 'newpage.php'">Add new page</button>
+
+        <!-- Popup for success messages -->
+        <?php 
+            if(isset($_GET['success-deleted'])) { 
+                echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Page successfully deleted</b></p>'; 
+            } elseif(isset($_GET['success-post'])) { 
+                echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Page successfully published</b></p>'; 
+            } elseif(isset($_GET['success-update'])) { 
+                echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Page successfully updated</b></p>'; 
+            }
+        ?>
 
         <hr>
 
