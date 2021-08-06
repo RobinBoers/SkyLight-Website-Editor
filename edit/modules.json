@@ -18,6 +18,12 @@
         "in_menu": true
     },
     {
+        "filename": "comments.php",
+        "icon": "fas fa-comments",
+        "name": "Comments",
+        "in_menu": true
+    },
+    {
         "filename": "history.php",
         "icon": "fa fa-history fa-fw",
         "name": "History",
