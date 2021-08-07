@@ -14,6 +14,8 @@ body {
 :root {
     --color-one: #35df9c;
     /*  --color-two: #1ebf7f; */
+    --color-three: #159461;
+    --color-four: #19a56d;
 }
 
 input,
@@ -122,4 +124,44 @@ label {
 .settings,
 .settings h5 {
     margin: 10px 0px 25px !important;
+}
+
+.quickstart-list a {
+    color: darkslategray;
+}
+
+.quickstart-list a:hover {
+    color: rgb(63, 107, 107);
+    text-decoration: underline;
+}
+
+.new-post {
+    background-color: var(--color-three);
+    color: white;
+}
+
+.new-post:hover {
+    background-color: var(--color-four) !important;
+    color: white !important;
+}
+
+.quickstart h3 {
+    margin-bottom: 0 !important;
+}
+
+.quickstart p {
+    margin-top: 0;
+    color: rgb(70, 70, 70);
+}
+
+.quickstart .close {
+    float: right;
+    color: rgb(83, 83, 83);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.quickstart .close:hover {
+    color: rgb(41, 41, 41);
 }

@@ -62,6 +62,9 @@
 
         <hr>
 
+        <!-- Quickstart Guide (see #5) -->
+        <?php include "components/quickstart.php"; ?>
+
         <div class="w3-container">
             <h5>Welcome</h5>
             <p>Welcome to your new website! This is SkyLight Website Editor. With this program you can manage your own website, without any programming knowlegde. You can use one of the few default themes, or create one yourself with with the powerfull theming API. Write blogposts and add pages, in just a few clicks.<br>And the best thing: its free and open-source!</p>
@@ -77,6 +80,7 @@
     </div>
 
     <script src="components/sidebar.js"></script>
+    <script src="components/quickstart.js"></script>
 
     <?php } ?>
 </body>
