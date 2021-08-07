@@ -2,7 +2,7 @@
     {
         "filename": "index.php",
         "icon": "fa fa-users fa-fw",
-        "name": "Dashboard",
+        "name": "Overview",
         "in_menu": true
     },
     {
