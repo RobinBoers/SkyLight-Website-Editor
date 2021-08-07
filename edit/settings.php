@@ -56,7 +56,7 @@
 
         <div class="w3-container settings">
 
-            <h5><b><i class="fas fa-users-cog"></i> General</b></h5>
+            <h5 id="general"><b><i class="fas fa-users-cog"></i> General</b></h5>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="sitetitle">Site title</label>
                 <input name="sitetitle" type="text" placeholder="Enter new site title...">
@@ -68,14 +68,14 @@
                 <input name="enter" type="submit" value="OK">
             </form>
             <hr>
-            <h5><b><i class="fa fa-lock"></i> Security</b></h5>
+            <h5 id="security"><b><i class="fa fa-lock"></i> Security</b></h5>
             <form action="scripts/changepassword.php" method="post">
                 <label for="pswd">Old password</label> <input name="pswd" type="password" placeholder="Type old password..."><br>
                 <label for="newpswd">New password</label> <input name="newpswd" type="password" placeholder="Type new password..."><input name="changepass" type="submit" value="OK">
                 
             </form>
             <hr>
-            <h5><b><i class="fa fa-image"></i> Logo</b></h5>
+            <h5 id="logo"><b><i class="fa fa-image"></i> Logo</b></h5>
             <form class="inline-form" action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data" id="logo-form">
                 <input style="display:none" required type="file" name="fileToUpload" id="logo-upload">
                 <input type="button" onclick="uploadFile('logo')" value="Upload new logo" name="submit">
@@ -84,7 +84,7 @@
                 <input type="submit" value="Delete logo" name="deletelogo">
             </form>
             <hr>
-            <h5><b><i class="fa fa-archive"></i> Data</b></h5>
+            <h5 id="data"><b><i class="fa fa-archive"></i> Data</b></h5>
             <form class="inline-form" action="scripts/backup-data.php" method="post" enctype= "multipart/form-data">
                 <input type="submit" value="Backup userdata" name="submit">
             </form>
@@ -93,18 +93,18 @@
                 <input type="button"  onclick="uploadFile('data')" value="Restore userdata" name="submit">
             </form>
             <hr>
-            <h5><b><i class="fa fa-paint-brush"></i> Custom CSS Styling</b></h5>
+            <h5 id="custom-css"><b><i class="fa fa-paint-brush"></i> Custom CSS Styling</b></h5>
             <form action="scripts/custom-css.php" method="post" enctype= "multipart/form-data">
                 <textarea name="css"><?php if(file_get_contents('../css/custom.css')) {echo file_get_contents('../css/custom.css');} ?></textarea><br>
                 <input type="submit" value="OK" name="submit"><br>
             </form>
             <hr>
-            <h5><b><i class="fa fa-download"></i> Optional updates</b></h5>
+            <h5 id="optional-updates"><b><i class="fa fa-download"></i> Optional updates</b></h5>
             <p>
                 <a href="scripts/updatefiles.php?css">Update optional css files</a>
             </p>
             <hr>
-            <h5><b><i class="far fa-window-restore"></i> Advanced</b></h5>
+            <h5 id="advanced"><b><i class="far fa-window-restore"></i> Advanced</b></h5>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="root_path">Installation directory</label>
                 <input name="root_path" type="text" placeholder="Enter new path...">

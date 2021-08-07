@@ -145,12 +145,17 @@ label {
     color: white !important;
 }
 
-.quickstart h3 {
+.quickstart h3,
+.password-prompt h3 {
     margin-bottom: 0 !important;
 }
 
-.quickstart p {
+.quickstart p,
+.password-prompt p {
     margin-top: 0;
+}
+
+.quickstart p {
     color: rgb(70, 70, 70);
 }
 
