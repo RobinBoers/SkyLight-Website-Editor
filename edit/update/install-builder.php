@@ -75,6 +75,13 @@
         }
         Unzip($dir,$filename);
         unlink($filename);
+
+        if(!file_exists("../../content/comments.json")) {
+            $myfile = fopen("../../content/comments.json", "w") or die("> Unable to create comments.json!<br>");
+            fwrite($myfile, "[]");
+            fclose($myfile);
+        }
+        
         echo '> Update completed<br>';
         echo '> You are now running version '.$version.'<br>';
         echo '> <a href="index.php">Back</a>';
