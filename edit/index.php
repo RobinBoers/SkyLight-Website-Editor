@@ -19,7 +19,7 @@
 
         <div class="w3-row-padding w3-margin-bottom">
             <div class="w3-quarter">
-                <div class="w3-container w3-red w3-padding-16">
+                <div class="w3-container w3-red w3-padding-16 w3-card">
                 <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
                 <div class="w3-right">
                     <h3><?php include "../content/views.php"; echo $views; ?></h3>
@@ -29,7 +29,7 @@
                 </div>
             </div>
             <div class="w3-quarter">
-                <div class="w3-container w3-blue w3-padding-16">
+                <div class="w3-container w3-blue w3-padding-16 w3-card">
                 <div class="w3-left"><i class="fa fa-edit w3-xxxlarge"></i></div>
                 <div class="w3-right">
                     <h3><?php include "analytics/countblogs.php"; ?></h3>
@@ -39,7 +39,7 @@
                 </div>
             </div>
             <div class="w3-quarter">
-                <div class="w3-container w3-green w3-padding-16">
+                <div class="w3-container w3-green w3-padding-16 w3-card">
                 <div class="w3-left"><i class="fa fa-clone w3-xxxlarge"></i></div>
                 <div class="w3-right">
                     <h3><?php include "analytics/countpages.php"; ?></h3>
@@ -49,7 +49,7 @@
                 </div>
             </div>
             <div class="w3-quarter">
-                <div class="w3-container w3-deep-orange w3-padding-16">
+                <div class="w3-container w3-deep-orange w3-padding-16 w3-card">
                 <div class="w3-left"><i class="fas fa-comments w3-xxxlarge"></i></div>
                 <div class="w3-right">
                     <h3><?php include "analytics/countcomments.php"; ?></h3>
