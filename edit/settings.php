@@ -103,6 +103,13 @@
             <p>
                 <a href="scripts/updatefiles.php?css">Update optional css files</a>
             </p>
+            <hr>
+            <h5><b><i class="far fa-window-restore"></i> Advanced</b></h5>
+            <form action="scripts/update-siteinformation.php" method="post">
+                <label for="root_path">Installation directory</label>
+                <input name="root_path" type="text" placeholder="Enter new path...">
+                <input name="enter" type="submit" value="OK">
+            </form>
         </div>
         <hr>
 

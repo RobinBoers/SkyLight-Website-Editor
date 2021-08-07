@@ -1,5 +1,5 @@
 <ul>
-    <li><a href="/">Home</a></li>
+    <li><a href="<?php echo $root_path ?>/">Home</a></li>
     <?php    
     session_start();
 
@@ -20,7 +20,7 @@
         
         
         foreach ($pages as $page){
-            echo "<li><a href='".$page->link."'>".$page->title."</a></li>";
+            echo "<li><a href='".$root_path.$page->link."'>".$page->title."</a></li>";
         }
             
     }

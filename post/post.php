@@ -23,7 +23,7 @@
         <h2><?php echo $pagetitle; ?></h2>
         <p>By <?php echo $auteur; ?></p>
         <div class="postcontent"><?php echo $content; ?></div>
-        <a href="<?php echo $taglink; ?>"><?php echo $tags; ?></a>
+        <a href="<?php echo $root_path.$taglink; ?>"><?php echo $tags; ?></a>
         <h3>Comments</h3>
         <?php include "../content/comments.php"; ?>
         <h2>More posts</h2>

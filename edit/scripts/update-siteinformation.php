@@ -5,6 +5,7 @@
 
         $sitetitle = $sitetitle;
         $footertext = $footertext;
+        $root_path = $root_path;
 
         if(isset($_POST['footertext'])) {
             $footertext = $_POST['footertext'];
@@ -12,12 +13,16 @@
         if(isset($_POST['sitetitle'])) {
             $sitetitle = $_POST['sitetitle'];
         }
+        if(isset($_POST['root_path'])) {
+            $root_path = $_POST['root_path'];
+        }
 
         $fp = fopen("../../content/siteinformation.php", 'w+');
         fwrite($fp, "
         <?php
         \$sitetitle = '".$sitetitle."';
         \$footertext = '".$footertext."';
+        \$root_path = '".$root_path."';
         ?>
         ");
         fclose($fp);
