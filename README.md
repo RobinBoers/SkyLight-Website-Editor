@@ -6,6 +6,7 @@
 SkyLight is a flexible website builder made with html5, css3, javascript and php. It has support for third-party themes and it is highly customizable. Layout is made using W3.CSS
 
 NOTE: SkyLight is written for PHP 7. It will not work in PHP 8. I found that out the hard way when I was debugging some bugs that appeared out of nowhere because I accedentaly updated XAMPP.
+
 ## Features
 - Simple dashboard
 - Custom logos
@@ -24,12 +25,11 @@ If you want to try the latest stuff git clone from the master branch:
 
 ```git clone https://github.com/RobinBoers/SkyLight-Website-Editor```  
 
-The default password is `root`
+The default password is `root`. It can be used with any username, because I haven't added, and do not plan on adding, accounts. The username you enter will appear under the posts you make, but has no other effect.
 
 ## For help or suggestions
-If you need help or have any suggestions, you can email me at robin@geheimesite.nl  
-I'd like to hear from you!  
-I also made a wiki, where you can find tutorials about SkyLight
+If you need help or have any suggestions, you can email me at robin@geheimesite.nl or [create an issue](https://github.com/RobinBoers/SkyLight-Website-Editor/issues/new) on GitHub. I'd like to hear from you!  
+I also made a wiki, where you can find documentation about SkyLight. The wiki is linked below.
 
 ### Links: 
 - [Theme Library (GitHub)](https://github.com/RobinBoers/SkyLight-themelibrary)
