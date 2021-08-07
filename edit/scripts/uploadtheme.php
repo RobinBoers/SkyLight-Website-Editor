@@ -21,7 +21,14 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                 // the upload location
                 $customId = uniqid();
-                $path = '../../content/themes/uploads/'.$customId;  
+                $path = '../../content/themes/uploads/'.$customId.'/';  
+
+                // Create path
+                mkdir('../../content/themes');
+                mkdir('../../content/themes/uploads');
+                mkdir($path);
+
+                // Get full file locations
                 $location = $path . $file_name;  
 
                 if(move_uploaded_file($_FILES['zip_file']['tmp_name'], $location))  {  
