@@ -102,6 +102,17 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                             echo "> replaced old comments.php<br>";
                          }
+
+                         else if($file == "menu.php") {
+
+                            echo "> found menu.php<br>";
+
+                            unlink("../../content/menu.php"); 
+                            copy($path."/menu.php", "../../content/menu.php"); 
+                        
+
+                            echo "> replaced old menu.php<br>";
+                         }
                          
                          else if ($file == "." || $file == "..") {
 
