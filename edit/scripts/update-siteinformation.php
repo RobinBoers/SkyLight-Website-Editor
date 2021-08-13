@@ -21,6 +21,8 @@
         fwrite($fp, "
         <?php
         \$sitetitle = '".$sitetitle."';
+        \$sitelanguage = '".$sitelanguage."';
+        \$sitedescription = '".$sitedescription."';
         \$footertext = '".$footertext."';
         \$root_path = '".$root_path."';
         ?>
