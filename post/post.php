@@ -15,6 +15,7 @@
 <body>
     <header>
         <h1><a href="/index.php"><?php echo $sitetitle; ?></a></h1>
+        <img src="<?php echo $root_path ?>/content/logo.jpg" class="logo">
         <nav>
             <?php include "../content/menu.php"; ?>
         </nav>
@@ -23,8 +24,9 @@
         <h2><?php echo $pagetitle; ?></h2>
         <p>By <?php echo $auteur; ?></p>
         <div class="postcontent"><?php echo $content; ?></div>
+        <p>Posted at <b><?= $blog->datum ?></b></p>
         <a href="<?php echo $root_path.$taglink; ?>"><?php echo $tags; ?></a>
-        <h3>Comments</h3>
+        <h3 id="comments">Comments</h3>
         <?php include "../content/comments.php"; ?>
         <h2>More posts</h2>
         <?php include "../content/blog.php"; ?>

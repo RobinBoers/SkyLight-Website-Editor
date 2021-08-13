@@ -30,6 +30,7 @@
     
     <header>
         <h1><?php echo $sitetitle; ?></h1>
+        <img src="<?php echo $root_path ?>/content/logo.jpg" class="logo">
         <nav>
             <?php include "content/menu.php"; ?>
         </nav>

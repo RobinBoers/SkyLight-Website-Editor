@@ -15,6 +15,7 @@
 <body>
     <header>
         <h1><a href="/index.php"><?php echo $sitetitle; ?></a></h1>
+        <img src="<?php echo $root_path ?>/content/logo.jpg" class="logo">
         <nav>
             <?php include "../content/menu.php"; ?>
         </nav>
