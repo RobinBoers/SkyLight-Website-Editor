@@ -9,7 +9,7 @@ if(file_exists($file) && filesize($file) > 0){
         
         ?>
 
-            <div class="w3-container w3-red w3-text-dark-red w3-padding w3-margin w3-card password-prompt w3-padding-16">
+            <div class="w3-container w3-red w3-text-dark-red w3-padding w3-margin w3-card password-prompt w3-padding-16 dashboard-section">
 
                 <h3><b>Change your password!</b></h3>
                 <p>You haven't changed your password yet. This is a big vulnerability. Change it as soon as possible!</p>

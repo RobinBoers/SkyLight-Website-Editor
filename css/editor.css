@@ -170,3 +170,7 @@ label {
 .quickstart .close:hover {
     color: rgb(41, 41, 41);
 }
+
+.dashboard-section {
+    border-radius: 8px;
+}
