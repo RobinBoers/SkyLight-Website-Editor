@@ -18,13 +18,16 @@ SkyLight is a flexible website builder made with html5, css3, javascript and php
 - Multiple default themes (more coming soon)
 - Online updating
 - Encrypted passwords 
+- RSS feed (coming soon)
 - Custom CSS Styling*
 
 \* If the theme supports it
 
 ## Installation
 
-Download the latest version from the releases page on this GitHub repo, and extract the zip file on the root of your server. Download `Source code (zip)` and not `package.zip`, because `package.zip` is for online updating only and doesn't work on its own. 
+Download the latest version from the releases page on this GitHub repo, and extract the zip file on your server. It can be installed anywhere. Put it at the root of your server or in a subdirectory. If installed in a subdirectory you need to set the correct path in the Advanced section of the settings panel after installation.
+
+**NOTE: Download `Source code (zip)` and not `package.zip`, because `package.zip` is for online updating only and doesn't work on its own!**
 
 If you want to run a developer preview built, git clone from master:
 
