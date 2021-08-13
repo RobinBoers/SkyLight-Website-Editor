@@ -28,6 +28,7 @@
         // Add files to the zip file
         $zip->addFile('../../content/blog.json', 'content/blog.json');
         $zip->addFile('../../content/pages.json', 'content/pages.json');
+        $zip->addFile('../../content/comments.json', 'content/comments.json');
         $zip->addFile('../../content/siteinformation.php', 'content/siteinformation.php');
         $zip->addFile('../../content/views.php', 'content/views.php');
         $zip->addFile('../../content/menu.php', 'content/menu.php');
