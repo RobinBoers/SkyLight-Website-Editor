@@ -35,6 +35,8 @@ If you want to run a developer preview built, git clone from master:
 
 The default password is `root`. It can be used with any username, because I haven't added, and do not plan on adding, accounts. The username you enter will appear under the posts and comments you make, but has no other effect.
 
+Check the [Installation Guide](https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/Installation-Guide) for more info.
+
 ## For help or suggestions
 
 If you need help or have any suggestions, you can email me at robin@geheimesite.nl or [create an issue](https://github.com/RobinBoers/SkyLight-Website-Editor/issues/new) on GitHub. I'd like to hear from you!  

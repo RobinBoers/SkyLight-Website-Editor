@@ -32,7 +32,9 @@
         $zip->addFile('../../content/siteinformation.php', 'content/siteinformation.php');
         $zip->addFile('../../content/views.php', 'content/views.php');
         $zip->addFile('../../content/menu.php', 'content/menu.php');
-        $zip->addFile('../../content/logo.php', 'content/logo.php');
+        if(file_exists("../../content/logo.jpg")) {
+            $zip->addFile('../../content/logo.jpg', 'content/logo.jpg');
+        }
         $zip->addFile('../../content/history.html', 'content/history.html');
         $zip->addFile('../password.txt', 'edit/password.txt');
 

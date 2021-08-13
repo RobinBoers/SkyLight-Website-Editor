@@ -12,7 +12,7 @@
     if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
         // check if form is send
-        if(isset($_POST["submit"])) {  
+        if(isset($_FILES['zip_file'])) {  
 
             // if the zipfile name isn't empty, proceed
             if($_FILES['zip_file']['name'] != '')  {  

@@ -77,8 +77,8 @@
             <hr>
             <h5 id="logo"><b><i class="fa fa-image"></i> Logo</b></h5>
             <form class="inline-form" action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data" id="logo-form">
-                <input style="display:none" required type="file" name="fileToUpload" id="logo-upload">
-                <input type="button" onclick="uploadFile('logo')" value="Upload new logo" name="submit">
+                <input style="display:none" accept="image/jpeg" required type="file" name="fileToUpload" id="logo-upload">
+                <input type="button" onclick="uploadFile('logo')" value="Upload new logo">
             </form>
             <form class="inline-form" action="scripts/deletelogo.php" method="post">
                 <input type="submit" value="Delete logo" name="deletelogo">
@@ -90,7 +90,7 @@
             </form>
             <form class="inline-form" action="scripts/restore-data.php" enctype="multipart/form-data" method="post" id="data-form">
                 <input style="display:none" type="file" name="zip_file" id="data-upload">
-                <input type="button"  onclick="uploadFile('data')" value="Restore userdata" name="submit">
+                <input type="button"  onclick="uploadFile('data')" value="Restore userdata">
             </form>
             <hr>
             <h5 id="custom-css"><b><i class="fa fa-paint-brush"></i> Custom CSS Styling</b></h5>

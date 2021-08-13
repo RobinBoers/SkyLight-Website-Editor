@@ -2,20 +2,15 @@
 session_start();
 if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
-// Clear logo file
-$fp = fopen("../../content/logo.php", 'w+');
-fwrite($fp, " ");
-fclose($fp);
+    // Delete the file
+    unlink('../../content/logo.jpg');
 
-// delete the file
-unlink('../../images/logo.jpg');
+    // Add to history log
+    $history = fopen("../../content/history.html", 'a');
+    fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the logo</p>");
+    fclose($history);
 
-// Add to history log
-$history = fopen("../../content/history.html", 'a');
-fwrite($history, "<p><b>".date("l, j F Y")." - ".date("H:i")."</b> ".$_SESSION['name']." has deleted the logo</p>");
-fclose($history);
-
-header("Location: ../settings.php?success-logo-delete");
+    header("Location: ../settings.php?success-logo-delete");
 
 }
 else {

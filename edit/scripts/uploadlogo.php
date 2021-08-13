@@ -3,7 +3,7 @@ session_start();
 if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
     $newFileName = "logo.jpg";
-    $target_dir = "../../images/";
+    $target_dir = "../../content/";
     $target_file = $target_dir . $newFileName;
     $uploadOk = 1;
     $logo = false;
@@ -11,20 +11,23 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
     $error = "#";
 
     // Check if image file is a actual image or fake image
-    if(isset($_POST["submit"])) {
+    if(isset($_FILES["fileToUpload"])) {
 
         $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
 
         if($check !== false) {
-            echo "<br>The uploaded file was an image - " . $check["mime"] . ".";
             $uploadOk = 1;
-        } 
-        
+        }   
         else {
             $error == "<br>Error: the uploaded file wasn't a image.<br>";
             $uploadOk = 0;
         }
 
+    }
+
+    if($check["mime"] !== "image/jpeg") {
+        $error == "<br>Error: the image file you selected wasn't a valid JPG file.<br>";
+        $uploadOk = 0;
     }
 
     // Check if file already exists
@@ -40,16 +43,9 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
    
     } 
 
-    // if everything is ok, try to upload the logo
+    // If everything is ok, try to upload the logo
     else {
         if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-
-            // Show success message
-            // echo "<br>Het bestand ". basename( $_FILES["fileToUpload"]["name"]). " is geupload<br><a href='../settings.php'>Back</a><br>";
-
-            $fp = fopen("../../content/logo.php", 'w+');
-            fwrite($fp, "<img src='/images/logo.jpg' class='logo'>");
-            fclose($fp);
 
             // Add to history log
             $history = fopen("../../content/history.html", 'a');
