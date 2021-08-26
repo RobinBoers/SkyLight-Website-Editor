@@ -47,3 +47,5 @@ I also made a wiki, where you can find documentation about SkyLight. The wiki is
 - [Theme Selector](https://robinboers.github.io/SkyLight-themelibrary/)
 - [SkyLight basetheme (for theme development)](https://github.com/RobinBoers/SkyLight-basetheme)
 - [Wiki](https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/)
+
+![Screenshot](screenshot.png)

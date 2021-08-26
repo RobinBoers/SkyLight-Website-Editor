@@ -3,6 +3,7 @@
 <head>
     <?php
         include "components/module-head.php";
+        include "../content/siteinformation.php";
     ?>
 
     <?php $pagename = basename(__FILE__); ?>
@@ -42,7 +43,7 @@
             echo '<p class="w3-container w3-left w3-text-red"> <b><i class="fa fa-times"></i> Wrong password</b></p>'; 
         }?>
 
-        <!-- Popup if password change was successfull -->
+        <!-- Popup if site information was changed successfull -->
         <?php if(isset($_GET['success-siteinfo'])) { 
             echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Site information updated successfully.</b></p>'; 
         }?>
@@ -59,12 +60,22 @@
             <h5 id="general"><b><i class="fas fa-users-cog"></i> General</b></h5>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="sitetitle">Site title</label>
-                <input name="sitetitle" type="text" placeholder="Enter new site title...">
+                <input name="sitetitle" type="text" value="<?= $sitetitle ?>" placeholder="Enter new site title...">
+                <input name="enter" type="submit" value="OK">
+            </form>
+            <form action="scripts/update-siteinformation.php" method="post">
+                <label for="descript">Description</label>
+                <textarea name="descript" placeholder="Enter new description..."><?= $sitedescription ?></textarea>
+                <input name="enter" type="submit" value="OK">
+            </form>
+            <form action="scripts/update-siteinformation.php" method="post">
+                <label for="lang">Site language</label>
+                <select id="langlist" name="lang"></select>
                 <input name="enter" type="submit" value="OK">
             </form>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="footertext">Footer text</label>
-                <input name="footertext" type="text" placeholder="Enter new footer text...">
+                <input name="footertext" type="text"  value="<?= $footertext ?>" placeholder="Enter new footer text...">
                 <input name="enter" type="submit" value="OK">
             </form>
             <hr>
@@ -117,7 +128,7 @@
     </div>
 
     <script src="components/sidebar.js"></script>
-    <script src="components/settings.js"></script>
+    <script src="components/settings.js.php"></script>
     <?php } ?>
 </body>
 </html>
