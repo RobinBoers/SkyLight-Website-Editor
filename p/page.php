@@ -15,7 +15,9 @@
 <body>
     <header>
         <h1><a href="/index.php"><?php echo $sitetitle; ?></a></h1>
-        <img src="<?php echo $root_path ?>/content/logo.jpg" class="logo">
+        <?php if(file_exists($root_path."/content/logo.jpg")) {
+            echo '<img src="'.$root_path.'/content/logo.jpg" class="logo">';
+        } ?>
         <nav>
             <?php include "../content/menu.php"; ?>
         </nav>
