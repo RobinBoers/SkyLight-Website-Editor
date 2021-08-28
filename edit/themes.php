@@ -24,19 +24,20 @@
                 echo '<p class="w3-text-green"> <b><i class="fa fa-check"></i> Theme successfully installed.</b></p>'; 
             }?>
             
-            <p>Theme support is finally here!</p>
             <p>
                 To activate a theme, download one of the ones below or find third-party ones,<br>
                 and import the ZiP files with the uploadbutton below.
             </p>
 
-            <form method="post" action="scripts/uploadtheme.php" enctype="multipart/form-data">
+            <form class="inline-form" action="scripts/uploadtheme.php" method="post" enctype= "multipart/form-data" id="theme-form">
+                <input style="display:none" required type="file" name="zip_file" id="theme-upload">
+                <input type="button" onclick="uploadFile()" value="Upload theme">
+            </form>
 
-                <label>Select zip file</label>  
-                <input type="file" name="zip_file">
-                <input type="submit" name="submit" value="Upload">  
+            <form class="inline-form" action="scripts/backup-theme.php" method="post" enctype= "multipart/form-data">
+                <input type="submit" value="Export theme" name="submit">
+            </form>
 
-            </form> 
             <iframe src="https://robinboers.github.io/SkyLight-themelibrary/" width="100%" height="500px" style="border:0px solid white;" title="Theme Library"></iframe> 
         </div>
                 
@@ -44,6 +45,7 @@
     </div>
 
     <script src="components/sidebar.js"></script>
+    <script src="components/themes.js"></script>
     <?php } ?>
 </body>
 </html>
