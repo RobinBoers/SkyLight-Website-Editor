@@ -13,7 +13,7 @@ include "content/siteinformation.php"
         <description><?= $sitedescription ?></description>
         <link><?= $_SERVER['SERVER_NAME'].$root_path ?></link>
         <copyright><?= $footertext ?></copyright>
-        <language><?= $sitelanguage ?></language>
+        <language><?= strtolower($sitelanguage) ?></language>
         <image>
             <url><?= $_SERVER['SERVER_NAME'].$root_path."/content/logo.jpg" ?></url>
             <title><?= $sitetitle ?></title>

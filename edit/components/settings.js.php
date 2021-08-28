@@ -593,7 +593,7 @@ function generateList(element, values) {
 
     keys.forEach((key, index) => {
 
-        let convertedKey = key.toLocaleLowerCase().replace("_", "-");
+        let convertedKey = key.replace("_", "-");
 
         var option = document.createElement("option");
         option.value = `${convertedKey}`;
