@@ -174,3 +174,12 @@ label {
 .dashboard-section {
     border-radius: 8px;
 }
+
+/* Min height for Quill editor */
+.editor, #editor {
+    min-height: 600px;
+}
+
+.ql-toolbar, .ql-container {
+    border-left: none !important;
+}

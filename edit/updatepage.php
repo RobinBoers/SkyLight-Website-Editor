@@ -36,6 +36,8 @@
 
             <h2 class="title"><?php echo $title; ?></h2>
 
+        </div>
+
             <!-- Include stylesheet for Quill -->
             <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
@@ -49,7 +51,7 @@
             <!-- Include the Quill library -->
             <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 
-            <br>
+        <div class="w3-container"><br>
 
             <button onclick="submit_update()">Update</button>
 

@@ -36,20 +36,22 @@
 
         <h2 class="title"><?php echo $title; ?></h2>
 
-        <!-- Include stylesheet for Quill -->
-        <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    </div>
 
-        <!-- Create the editor container for Quill -->
-        <div id="editor">
-            <?php
-                echo $text;
-            ?>
-        </div>
+            <!-- Include stylesheet for Quill -->
+            <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
 
-        <!-- Include the Quill library -->
-        <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+            <!-- Create the editor container for Quill -->
+            <div id="editor">
+                <?php
+                    echo $text;
+                ?>
+            </div>
 
-        <br>
+            <!-- Include the Quill library -->
+            <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+
+    <div class="w3-container"><br>
 
         <button onclick="submit_update()">Update</button>
 
