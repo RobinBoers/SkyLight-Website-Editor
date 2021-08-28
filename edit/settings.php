@@ -75,7 +75,7 @@
             </form>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="footertext">Footer text</label>
-                <input name="footertext" type="text"  value="<?= $footertext ?>" placeholder="Enter new footer text...">
+                <textarea name="footertext" placeholder="Enter new footer text..."><?= $footertext ?></textarea>
                 <input name="enter" type="submit" value="OK">
             </form>
             <hr>

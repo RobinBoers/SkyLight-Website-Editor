@@ -593,12 +593,14 @@ function generateList(element, values) {
 
     keys.forEach((key, index) => {
 
+        let convertedKey = key.toLocaleLowerCase().replace("_", "-");
+
         var option = document.createElement("option");
-        option.value = `${values[key]}`;
+        option.value = `${convertedKey}`;
         option.text = `${values[key]}`;
         element.appendChild(option);
 
-        if (key.toLocaleLowerCase().replace("_", "-") == currentLang) {
+        if (convertedKey == currentLang) {
             option.defaultSelected = true;  
         }
         
