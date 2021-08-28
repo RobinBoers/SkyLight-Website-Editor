@@ -53,6 +53,11 @@
             echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Custom CSS Styling successfully updated.</b></p>'; 
         }?>
 
+        <!-- Popup if favicon upload was successfull -->
+        <?php if(isset($_GET['success-ico-upload'])) { 
+            echo '<p class="w3-container w3-left w3-text-green"> <b><i class="fa fa-check"></i> Favicon successfully uploaded.</b></p>'; 
+        }?>
+
         <hr>
 
         <div class="w3-container settings">
@@ -86,13 +91,17 @@
                 
             </form>
             <hr>
-            <h5 id="logo"><b><i class="fa fa-image"></i> Logo</b></h5>
+            <h5 id="logo"><b><i class="fa fa-image"></i> Logo & Favicon</b></h5>
             <form class="inline-form" action="scripts/uploadlogo.php" method="post" enctype= "multipart/form-data" id="logo-form">
                 <input style="display:none" accept="image/jpeg" required type="file" name="fileToUpload" id="logo-upload">
                 <input type="button" onclick="uploadFile('logo')" value="Upload new logo">
             </form>
             <form class="inline-form" action="scripts/deletelogo.php" method="post">
                 <input type="submit" value="Delete logo" name="deletelogo">
+            </form>
+            <form class="inline-form" action="scripts/uploadfavicon.php" method="post" enctype= "multipart/form-data" id="ico-form">
+                <input style="display:none" accept="image/x-icon image/vnd.microsoft.icon" required type="file" name="fileToUpload" id="ico-upload">
+                <input type="button" onclick="uploadFile('ico')" value="Upload favicon">
             </form>
             <hr>
             <h5 id="data"><b><i class="fa fa-archive"></i> Data</b></h5>

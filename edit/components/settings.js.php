@@ -11,6 +11,11 @@ function uploadFile(type) {
         document.getElementById("logo-upload").addEventListener("change", (e) => {
             document.getElementById("logo-form").submit();
         });
+    } else if (type == "ico") {
+        document.getElementById("ico-upload").click();
+        document.getElementById("ico-upload").addEventListener("change", (e) => {
+            document.getElementById("ico-form").submit();
+        });
     } else if (type == "data") {
         document.getElementById("data-upload").click();
         document.getElementById("data-upload").addEventListener("change", (e) => {
