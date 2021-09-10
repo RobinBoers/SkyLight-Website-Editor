@@ -70,7 +70,7 @@
             </form>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="descript">Description</label>
-                <textarea name="descript" placeholder="Enter new description..."><?= $sitedescription ?></textarea>
+                <textarea name="descript" placeholder="Enter new description..."><?= $sitedescription ?></textarea><br>
                 <input name="enter" type="submit" value="OK">
             </form>
             <form action="scripts/update-siteinformation.php" method="post">
@@ -80,7 +80,7 @@
             </form>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="footertext">Footer text</label>
-                <textarea name="footertext" placeholder="Enter new footer text..."><?= $footertext ?></textarea>
+                <textarea name="footertext" placeholder="Enter new footer text..."><?= $footertext ?></textarea><br>
                 <input name="enter" type="submit" value="OK">
             </form>
             <hr>

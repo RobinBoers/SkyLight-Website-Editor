@@ -104,11 +104,13 @@ a:hover {
 
 textarea {
     border-style: solid;
+    margin-bottom: 5px;
 }
 
 label {
     display: block;
-    margin: 10px;
+    margin: 3px;
+    margin-top: 10px;
 }
 
 .inline-form,
@@ -188,9 +190,9 @@ label {
 textarea {
     width: 70%;
     height: 100px;
-    border-radius: 20px;
-    font-family: sans-serif;
-    padding: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 10px;
     resize: none;
 }
 
@@ -229,17 +231,21 @@ input[type="tel" i],
 input[type="email" i],
 input[type="password" i],
 select {
-    /*    border-style: outset;*/
     border-style: solid;
     border-image: initial;
-    border-radius: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
+    border-radius: 10px;
+    border-width: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 3px;
     height: 40px;
-    border-width: 1px;
-    border-color: gray;
 }
+
+/* Make submit buttons block */
+/*input[type="submit" i] {
+    display: block;
+    margin-top: 10px
+}*/
 
 /* Remove outline */
 :focus,
