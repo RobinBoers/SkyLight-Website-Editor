@@ -24,7 +24,7 @@ if(file_exists($file) && filesize($file) > 0){
                 $postnum += 1;
             ?>
             <article class="post">
-                <h3><a href="<?= $root_path.$blog->link ?>"><?= $blog->title ?></a></h3>
+                <h3 class="post-title"><a href="<?= $root_path.$blog->link ?>"><?= $blog->title ?></a></h3>
                 <p class="clearfix">posted by: <b><?= $blog->auteur ?></b> at <b><?= $blog->datum ?></b>, Tags: <a href="<?php echo $root_path.$blog->taglink; ?>"><b><?= $blog->tags ?></b></a></p>
                 <div class="clearfix blogtext postcontent">
                     <?php

@@ -4,16 +4,156 @@
 	
 	OFFICIAL SKYLIGHT THEME
 	
-    Theme name: SkyLight Default
+    Theme name: Simple
     Theme author: Robin Boers
-    Date created: 27/01/2020
-    Last updated: 20/06/2020
+    Date created: 10/90/2021
+    Last updated: 10/90/2021
+
+    Based on: 
+    https://github.com/RobinBoers/blogger-theme-collection/blob/master/simple.xml
 */
 
 main, header, footer {
-    width: 80%;
-    background-color: ghostwhite;
-    margin:auto;
+    /* width: 80%; */
+    /* background-color: rgb(252, 252, 252); */
+    /* margin:auto; */
     padding: 10px;
-    padding-left:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* header {
+    padding-top: 40px;
+} */
+
+body {
+    background: white;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+
+.post pre code {
+    /*width: 600px;*/
+    width: 100%;
+    overflow-x: auto;
+    font-family: 'Cascadia Code','Droid Sans Mono', monospace;
+    padding: 12px;
+    border-radius: 5px;
+    display: block;
+    background-color: #1b1c1d;
+    color: #adadad;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid black;
+}
+
+a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.post-title a, .title a, h1 a {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media only screen and (min-width: 750px) {
+    body {
+        width: 75%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    body {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .post pre code {
+        max-width: 100%;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+/* More pretty design */
+
+body { 
+    color: #757575; 
+    font: 17px Roboto, sans-serif;
+    background-color: #eeeeee;
+    min-height: 90vh;
+} 
+
+h1,h2,h3,h4,h5,h6 {
+    color: #444444;
+}
+
+.title { 
+    font-size: 48px;
+    font-family: Roboto, sans-serif;
+    margin: 0 0 13px 0;
+}
+
+.post-title {
+    font: normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+    margin: 0 0 8px 0;
+    color: #232323;
+}
+
+.post {
+    padding: 10px;
+}
+
+hr {
+    border-top-color: #757575;
+    border-top-style: dotted;
+    border-top-width: 3px;
+}
+
+header.pageheader {
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    
+}
+
+nav ul li a {
+    color: #757575;
+    font: 17px Roboto, sans-serif;
+    text-decoration: none;
+}
+
+nav ul li:not(:last-child)::after {
+    content: " - ";
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #757575;
+    font: 17px Roboto, sans-serif;
 }

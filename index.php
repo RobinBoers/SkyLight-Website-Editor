@@ -28,8 +28,8 @@
 </head>
 <body>
     
-    <header>
-        <h1><?php echo $sitetitle; ?></h1>
+    <header class="pageheader">
+        <h1 class="title"><?php echo $sitetitle; ?></h1>
         <?php if(file_exists($root_path."/content/logo.jpg")) {
             echo '<img src="'.$root_path.'/content/logo.jpg" class="logo">';
         } ?>
@@ -38,7 +38,6 @@
         </nav>
     </header>
     <main>
-        <h2>Blog</h2>
         <?php include "content/blog.php"; ?>
     </main>
     <footer>

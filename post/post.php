@@ -13,8 +13,8 @@
     <title><?php echo $pagetitle . " - " . $sitetitle; ?></title>
 </head>
 <body>
-    <header>
-        <h1><a href="/index.php"><?php echo $sitetitle; ?></a></h1>
+    <header class="pageheader">
+        <h1 class="title"><a href="<?= $root_path ?>/index.php"><?php echo $sitetitle; ?></a></h1>
         <?php if(file_exists($root_path."/content/logo.jpg")) {
             echo '<img src="'.$root_path.'/content/logo.jpg" class="logo">';
         } ?>
@@ -23,7 +23,7 @@
         </nav>
     </header>
     <main>
-        <h2><?php echo $pagetitle; ?></h2>
+        <h2 class="post-title"><?php echo $pagetitle; ?></h2>
         <p>By <?php echo $auteur; ?></p>
         <div class="postcontent"><?php echo $content; ?></div>
         <p>Posted at <b><?= $blog->datum ?></b></p>
