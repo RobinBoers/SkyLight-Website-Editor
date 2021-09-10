@@ -31,7 +31,6 @@
         $zip->addFile('../../content/comments.json', 'content/comments.json');
         $zip->addFile('../../content/siteinformation.php', 'content/siteinformation.php');
         $zip->addFile('../../content/views.php', 'content/views.php');
-        $zip->addFile('../../content/menu.php', 'content/menu.php');
         if(file_exists("../../content/logo.jpg")) {
             $zip->addFile('../../content/logo.jpg', 'content/logo.jpg');
         }
