@@ -43,9 +43,10 @@ If you need help or have any suggestions, you can email me at robin@geheimesite.
 I also made a wiki, where you can find documentation about SkyLight. The wiki is linked below.
 
 ### Links: 
-- [Theme Library (GitHub)](https://github.com/RobinBoers/SkyLight-themelibrary)
-- [Theme Selector](https://robinboers.github.io/SkyLight-themelibrary/)
-- [SkyLight basetheme (for theme development)](https://github.com/RobinBoers/SkyLight-basetheme)
+- [Theme Library](https://github.com/RobinBoers/SkyLight-themelibrary)
+- [Theme Picker](https://robinboers.github.io/SkyLight-themelibrary/)
+- [Basetheme (for theme development)](https://github.com/RobinBoers/SkyLight-basetheme)
 - [Wiki](https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/)
+- [Bugtracker](https://github.com/RobinBoers/SkyLight-Website-Editor/issues/)
 
 ![Screenshot](screenshot.png)
