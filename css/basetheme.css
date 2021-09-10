@@ -38,6 +38,14 @@ h1 a {
     color: black;
 }
 
+/* Pointer cursor for buttons */
+input[type="button" i],
+input[type="submit" i],
+button,
+input[type="file" i]::-webkit-file-upload-button {
+    cursor: pointer;
+}
+
 /* Make warnings red */
 .red {
     color: red;

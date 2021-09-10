@@ -66,22 +66,13 @@
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="sitetitle">Site title</label>
                 <input name="sitetitle" type="text" value="<?= $sitetitle ?>" placeholder="Enter new site title...">
-                <input name="enter" type="submit" value="OK">
-            </form>
-            <form action="scripts/update-siteinformation.php" method="post">
                 <label for="descript">Description</label>
-                <textarea name="descript" placeholder="Enter new description..."><?= $sitedescription ?></textarea><br>
-                <input name="enter" type="submit" value="OK">
-            </form>
-            <form action="scripts/update-siteinformation.php" method="post">
+                <textarea name="descript" placeholder="Enter new description..."><?= $sitedescription ?></textarea>
                 <label for="lang">Site language</label>
                 <select id="langlist" name="lang"></select>
-                <input name="enter" type="submit" value="OK">
-            </form>
-            <form action="scripts/update-siteinformation.php" method="post">
                 <label for="footertext">Footer text</label>
-                <textarea name="footertext" placeholder="Enter new footer text..."><?= $footertext ?></textarea><br>
-                <input name="enter" type="submit" value="OK">
+                <textarea name="footertext" placeholder="Enter new footer text..."><?= $footertext ?></textarea><br><br>
+                <input name="enter" type="submit" value="Update">
             </form>
             <hr>
             <h5 id="security"><b><i class="fa fa-lock"></i> Security</b></h5>
@@ -127,7 +118,7 @@
             <h5 id="advanced"><b><i class="far fa-window-restore"></i> Advanced</b></h5>
             <form action="scripts/update-siteinformation.php" method="post">
                 <label for="root_path">Installation directory</label>
-                <input name="root_path" type="text" placeholder="Enter new path...">
+                <input name="root_path" type="text" value="<?= $root_path ?>" placeholder="Enter new path...">
                 <input name="enter" type="submit" value="OK">
             </form>
         </div>

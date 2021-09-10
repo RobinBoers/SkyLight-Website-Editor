@@ -18,12 +18,6 @@ body {
     --color-four: #19a56d;
 }
 
-input,
-button,
-input[type="file" i]::-webkit-file-upload-button:hover {
-    transition: none !important;
-}
-
 a {
     font-weight: bold;
     color: var(--color-one);
