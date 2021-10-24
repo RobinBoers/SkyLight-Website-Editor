@@ -13,11 +13,11 @@
     <?php if($_SESSION['login'] === true) { ?>
     <?php include "components/sidebar.php"; ?>
 
-    <div class="w3-main module-content">
+    <div style="display: flex;flex-direction: column;height: 100%;padding-right: 0;" class="w3-main module-content">
 
         <?php include "components/module-header.php"?>
 
-        <div class="w3-container">
+        <div style="flex-grow: 1;display:flex;flex-direction: column;" class="w3-container">
 
             <!-- Popup if install was successfull -->
             <?php if(isset($_GET['success'])) { 
@@ -29,16 +29,20 @@
                 and import the ZiP files with the uploadbutton below.
             </p>
 
-            <form class="inline-form" action="scripts/uploadtheme.php" method="post" enctype= "multipart/form-data" id="theme-form">
-                <input style="display:none" required type="file" name="zip_file" id="theme-upload">
-                <input type="button" onclick="uploadFile()" value="Upload theme">
-            </form>
+            <div>
 
-            <form class="inline-form" action="scripts/backup-theme.php" method="post" enctype= "multipart/form-data">
-                <input type="submit" value="Export theme" name="submit">
-            </form>
+                <form class="inline-form" action="scripts/uploadtheme.php" method="post" enctype= "multipart/form-data" id="theme-form">
+                    <input style="display:none" required type="file" name="zip_file" id="theme-upload">
+                    <input type="button" onclick="uploadFile()" value="Upload theme">
+                </form>
 
-            <iframe src="https://robinboers.github.io/SkyLight-themelibrary/" width="100%" height="500px" style="border:0px solid white;" title="Theme Library"></iframe> 
+                <form class="inline-form" action="scripts/backup-theme.php" method="post" enctype= "multipart/form-data">
+                    <input type="submit" value="Export theme" name="submit">
+                </form>
+
+            </div>
+
+            <iframe src="https://robinboers.github.io/SkyLight-themelibrary/" width="100%" height="500px" style="border:0px solid white;flex-grow: 1;" title="Theme Library"></iframe> 
         </div>
                 
     <!-- End page content -->
