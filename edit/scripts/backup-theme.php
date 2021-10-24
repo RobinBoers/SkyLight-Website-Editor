@@ -25,7 +25,7 @@
             exit("> cannot open <$filename>\n");
         }
 
-        $uploads_path = realpath('../../content/uploads');
+        $uploads_path = realpath('../../content/assets');
         $uploads = new RecursiveIteratorIterator(
             new RecursiveDirectoryIterator($uploads_path),
             RecursiveIteratorIterator::LEAVES_ONLY

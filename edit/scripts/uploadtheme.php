@@ -127,8 +127,11 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                          else {
 
-                             echo " > copying ".$file;
-                             copy($path."/".$file, "../../content/uploads/".$file); 
+                            echo " > copying ".$file;
+                            if (!file_exists("../../content/assets")) {
+                                mkdir("../../content/assets");
+                            }
+                            copy($path."/".$file, "../../content/assets/".$file); 
 
                          }
                             
