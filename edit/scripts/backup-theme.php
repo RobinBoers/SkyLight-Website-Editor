@@ -25,6 +25,19 @@
             exit("> cannot open <$filename>\n");
         }
 
+        $uploads_path = realpath('../../content/uploads');
+        $uploads = new RecursiveIteratorIterator(
+            new RecursiveDirectoryIterator($uploads_path),
+            RecursiveIteratorIterator::LEAVES_ONLY
+        );
+
+        foreach ($uploads as $name => $file) {
+            if (!$file->isDir()) {
+                $filePath = $file->getRealPath();
+                $zip->addFile($filePath, basename($filePath));
+            }
+        }
+
         // Add files to the zip file
         $zip->addFile('../../content/blog.php', 'blog.php');
         $zip->addFile('../../content/comments.php', 'comments.php');
@@ -65,7 +78,6 @@
             unlink($filename);
             exit;
         }
-
     }
     else {
 
