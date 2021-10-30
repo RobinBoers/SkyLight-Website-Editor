@@ -46,6 +46,7 @@
         $zip->addFile('../../post/post.php', 'post.php');
         $zip->addFile('../../p/page.php', 'page.php');
         $zip->addFile('../../css/theme.css', 'theme.css');
+        $zip->addFile('../../404.php', '404.css');
 
         // Debug messages
         echo "> numfiles: " . $zip->numFiles . "<br>";

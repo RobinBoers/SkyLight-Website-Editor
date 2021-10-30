@@ -120,6 +120,17 @@ if(isset($_SESSION['name']) && $_SESSION['login'] === true){
 
                             echo "> replaced old menu.php<br>";
                          }
+
+                         else if($file == "404.php") {
+
+                            echo "> found 404.php<br>";
+
+                            unlink("../../content/404.php"); 
+                            copy($path."/404.php", "../../404.php"); 
+                        
+
+                            echo "> replaced old 404.php<br>";
+                         }
                          
                          else if ($file == "." || $file == "..") {
 
