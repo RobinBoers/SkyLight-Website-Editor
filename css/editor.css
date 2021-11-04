@@ -399,3 +399,24 @@ input[type="range"]:focus::-ms-fill-upper {
 .editor-nav a:hover {
     text-decoration: none !important;
 }
+
+.themes {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-right: 0;
+}
+
+.themes .iframe-container {
+    flex-grow: 1;
+    display:flex;
+    flex-direction: column;
+    padding-right: 0;
+}
+
+@media screen and (max-width: 993px) {
+    .themes .module-header {
+        padding-top: 0px;
+    }
+}

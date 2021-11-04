@@ -13,11 +13,11 @@
     <?php if($_SESSION['login'] === true) { ?>
     <?php include "components/sidebar.php"; ?>
 
-    <div style="display: flex;flex-direction: column;height: 100%;padding-right: 0;" class="w3-main module-content">
+    <div class="w3-main themes module-content">
 
         <?php include "components/module-header.php"?>
 
-        <div style="flex-grow: 1;display:flex;flex-direction: column;" class="w3-container">
+        <div class="w3-container iframe-container">
 
             <!-- Popup if install was successfull -->
             <?php if(isset($_GET['success'])) { 
