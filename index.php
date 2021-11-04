@@ -11,18 +11,11 @@
     </style>
     <?php 
         include "content/siteinformation.php";
-
-        include("content/views.php");
-        $views = $views + 1; //echo $views;
-        $fp = fopen("content/views.php", 'w+');
-        fwrite($fp, "
-        <?php
-        \$views = ".$views.";
-        ?>
-        ");
-        fclose($fp);
+        include "content/themedocs.php";
 
         $pagename = basename(__FILE__, ".php");
+
+        view_counter();
     ?>
     <title><?php echo "Home - " . $sitetitle; ?></title>
 </head>

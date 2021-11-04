@@ -30,8 +30,6 @@
         <a href="<?php echo $root_path.$taglink; ?>"><?php echo $tags; ?></a>
         <h3 id="comments">Comments</h3>
         <?php include "../content/comments.php"; ?>
-        <h2>More posts</h2>
-        <?php include "../content/blog.php"; ?>
     </main>
     <footer>
         <p><?php echo $footertext; ?></p>

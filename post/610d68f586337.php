@@ -1,5 +1,4 @@
 <?php 
-    $pagename = basename(__FILE__, ".php");
     $BlogId = basename(__FILE__, ".php");
 
     $contents = file_get_contents("../content/blog.json");
@@ -20,16 +19,10 @@
         }
     } 
 
-    include("../content/views.php");
-    $views = $views + 1; 
-    //echo $views;
-    $fp = fopen("../content/views.php", 'w+');
-    fwrite($fp, "
-    <?php
-    \$views = ".$views.";
-    ?>
-    ");
-    fclose($fp);
+    include "../content/siteinformation.php";
+    include "../content/themedocs.php";
+
+    view_counter();
 
     include "post.php";
 ?>
