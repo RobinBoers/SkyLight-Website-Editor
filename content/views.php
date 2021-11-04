@@ -1,3 +1,3 @@
 <?php
-        $views = 8;
+        $views = 0;
         ?>
