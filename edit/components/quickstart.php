@@ -47,7 +47,7 @@ if(file_exists($file) && filesize($file) > 0){
 
                     <ul class="quickstart-list">
                         <li><a href="https://github.com/RobinBoers/SkyLight-Website-Editor">Source</a></li>
-                        <li><a  href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki">Wiki & Documentation</a></li>
+                        <li><a  href="https://docs.geheimesite.nl/SkyLight-Website-Editor">Wiki & Documentation</a></li>
                         <li><a  href="https://github.com/RobinBoers/SkyLight-Website-Editor/issues">Bugtracker</a></li>
                     </ul>
                 </span>
