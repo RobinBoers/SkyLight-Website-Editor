@@ -65,7 +65,7 @@
 
                         <p>
                             Please make sure to backup your userdata before updating.<br>
-                            Check out <a href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
+                            Check out <a href="https://docs.geheimesite.nl/SkyLight-Website-Editor/how-to-backup-your-userdata.html">this tutorial</a> to see how.
                         </p>
 
                         <p>
@@ -76,7 +76,7 @@
 
                         <p>
                             Please make sure to backup your userdata before updating.<br>
-                            Checkout <a hef="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/How-to-backup-your-userdata">this tutorial</a> to see how.
+                            Checkout <a hef="https://docs.geheimesite.nl/SkyLight-Website-Editor/how-to-backup-your-userdata.html">this tutorial</a> to see how.
                         </p>
 
                         <p>

@@ -47,7 +47,7 @@
             <?php } elseif(strpos($currentversion, 'modded') !== false) { ?>
 
                 <p class="w3-text-red">
-                    Modded versions of SkyLight are not supported and will not receive updates<br>trough the online updater. <a target="_blank" href="https://github.com/RobinBoers/SkyLight-Website-Editor/wiki/Why-wont-the-online-updates-work-with-custom-version-strings%3F">Why?</a>
+                    Modded versions of SkyLight are not supported and will not receive updates<br>trough the online updater. <a target="_blank" href="https://docs.geheimesite.nl/SkyLight-Website-Editor/custom-version-strings.html">Why?</a>
                 </p>
 
                 <p>
