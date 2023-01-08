@@ -35,7 +35,7 @@ If you want to run a developer preview built, git clone from master:
 
 The default password is `root`. It can be used with any username, because I haven't added, and do not plan on adding, accounts. The username you enter will appear under the posts and comments you make, but has no other effect.
 
-Check the [Installation Guide](https://docs.geheimesite.nl/SkyLight-Website-Editor/installation-guide) for more info.
+Check the [installation guide](https://docs.geheimesite.nl/SkyLight-Website-Editor/installation-guide) for more info.
 
 ## For help or suggestions
 
@@ -43,9 +43,7 @@ If you need help or have any suggestions, you can email me at robin@geheimesite.
 I also made a wiki, where you can find documentation about SkyLight. The wiki is linked below.
 
 ### Links: 
-- [Theme Library](https://github.com/RobinBoers/SkyLight-themelibrary)
-- [Theme Picker](https://robinboers.github.io/SkyLight-themelibrary/)
-- [Basetheme (for theme development)](https://github.com/RobinBoers/SkyLight-basetheme)
+- [Themes](https://github.com/RobinBoers/SkyLight-themelibrary)
 - [Wiki](https://docs.geheimesite.nl/SkyLight-Website-Editor)
 - [Bugtracker](https://github.com/RobinBoers/SkyLight-Website-Editor/issues/)
 
